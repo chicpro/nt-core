@@ -1,0 +1,1010 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: 2018-07-06 11:12+0900\n"
+"PO-Revision-Date: 2018-07-06 11:13+0900\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ko_KR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.0.6\n"
+"X-Poedit-Basepath: ../../..\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: _n:1,2;_d;_dn:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: .git\n"
+"X-Poedit-SearchPathExcluded-1: theme\n"
+"X-Poedit-SearchPathExcluded-2: vendor\n"
+"X-Poedit-SearchPathExcluded-3: js/tinymce\n"
+
+#: adm/_common.php:6
+msgid "Only the administrator can access it."
+msgstr "관리자만 접근할 수 있습니다."
+
+#: adm/board.php:4 adm/boardForm.php:4 adm/sidebarMenu.php:8
+msgid "Board"
+msgstr "게시판"
+
+#: adm/board.php:68 adm/member.php:72 adm/pages.php:70 adm/visiting.php:147
+msgid "Total"
+msgstr "전체"
+
+#: adm/board.php:77 adm/member.php:81 adm/pages.php:79
+msgid "All items"
+msgstr "전체항목"
+
+#: adm/board.php:80 adm/boardForm.php:36
+msgid "Board ID"
+msgstr "게시판 아이디"
+
+#: adm/board.php:81
+msgid "Board Title"
+msgstr "게시판 제목"
+
+#: adm/board.php:86 adm/member.php:92 adm/pages.php:89 adm/visiting.php:140
+msgid "Search"
+msgstr "Search"
+
+#: adm/board.php:93 adm/member.php:84 adm/member.php:100 adm/memberForm.php:50
+#: adm/pages.php:96 member/signup.php:60 setup.php:49
+msgid "ID"
+msgstr "아이디"
+
+#: adm/board.php:94
+msgid "Title"
+msgstr "게시판 제목"
+
+#: adm/board.php:95 adm/index.php:75
+msgid "Posts"
+msgstr "게시글"
+
+#: adm/board.php:96 adm/index.php:86
+msgid "Comments"
+msgstr "댓글"
+
+#: adm/board.php:97
+msgid "Files"
+msgstr "파일"
+
+#: adm/board.php:98
+msgid "Links"
+msgstr "링크"
+
+#: adm/board.php:99 adm/pages.php:100
+msgid "Use"
+msgstr "사용함"
+
+#: adm/board.php:100 adm/member.php:107 adm/pages.php:101 member/signup.php:49
+msgid "Edit"
+msgstr "수정"
+
+#: adm/board.php:142 adm/member.php:132 adm/pages.php:123 adm/visiting.php:195
+msgid "No data available."
+msgstr "자료가 없습니다."
+
+#: adm/boardForm.php:22 adm/boardFormUpdate.php:95
+msgid "Board information does not exist."
+msgstr "게시판 정보가 존재하지 않습니다."
+
+#: adm/boardForm.php:40 adm/memberForm.php:54 setup.php:52
+msgid "Only alphabetic, numeric, and _ can be used"
+msgstr "영문자, 숫자, _ 만 사용 가능"
+
+#: adm/boardForm.php:46
+msgid "Board title"
+msgstr "게시판 제목"
+
+#: adm/boardForm.php:53
+msgid "Use board"
+msgstr "게시판 사용"
+
+#: adm/boardForm.php:56 adm/boardForm.php:189 adm/boardForm.php:199
+#: adm/config.php:181 adm/memberForm.php:111 adm/pagesForm.php:107
+#: member/signup.php:103
+msgid "Used"
+msgstr "사용함"
+
+#: adm/boardForm.php:57 adm/boardForm.php:190 adm/boardForm.php:200
+#: adm/config.php:182 adm/memberForm.php:112 adm/pagesForm.php:108
+#: adm/pagesForm.php:138 adm/pagesForm.php:160 member/signup.php:104
+msgid "Not used"
+msgstr "사용안함"
+
+#: adm/boardForm.php:63
+msgid "Board category"
+msgstr "게시판 분류"
+
+#: adm/boardForm.php:66
+msgid "Input example : Category1,Category2"
+msgstr "입력 예 : 분류1, 분류2"
+
+#: adm/boardForm.php:71
+msgid "Subject length"
+msgstr "제목 글자수"
+
+#: adm/boardForm.php:78 adm/config.php:129
+msgid "Lines per page"
+msgstr "페이지당 라인수"
+
+#: adm/boardForm.php:85 adm/config.php:136
+msgid "Number of pages"
+msgstr "페이지 표시수"
+
+#: adm/boardForm.php:92
+msgid "List view permissions"
+msgstr "목록보기 레벨"
+
+#: adm/boardForm.php:108
+msgid "Content view permissions"
+msgstr "내용보기 레벨"
+
+#: adm/boardForm.php:124
+msgid "Posts written permissions"
+msgstr "글작성 레벨"
+
+#: adm/boardForm.php:140
+msgid "Comments written permissions"
+msgstr "댓글작성 레벨"
+
+#: adm/boardForm.php:156
+msgid "Permission to create replies"
+msgstr "답글작성 레벨"
+
+#: adm/boardForm.php:172
+msgid "Number of attachments"
+msgstr "첨부파일 개수"
+
+#: adm/boardForm.php:179
+msgid "Number of links"
+msgstr "링크 개수"
+
+#: adm/boardForm.php:186
+msgid "Use Captcha"
+msgstr "캡챠사용"
+
+#: adm/boardForm.php:196
+msgid "Use Comment Captcha"
+msgstr "댓글 캡챠사용"
+
+#: adm/boardForm.php:208 adm/config.php:229 adm/memberForm.php:167
+msgid "Save"
+msgstr "Save"
+
+#: adm/boardForm.php:209 adm/memberForm.php:168 adm/pagesForm.php:176
+msgid "List"
+msgstr "목록"
+
+#: adm/boardFormUpdate.php:8 adm/configUpdate.php:11 adm/memberFormUpdate.php:8
+#: adm/pagesFormUpdate.php:9 board/commentAction.php:89
+#: board/commentUpdate.php:8 board/commentUpdate.php:208 board/download.php:9
+#: board/password.php:25 board/passwordCheck.php:8 board/passwordCheck.php:40
+#: board/writeUpdate.php:12 board/writeUpdate.php:196
+#: member/findPassword2.php:11 member/loginCheck.php:9
+#: member/passwordCheck.php:10 member/signupRun.php:10 member/signupRun.php:26
+msgid "Please use it in the correct way."
+msgstr "올바른 방법으로 이용해 주십시오."
+
+#: adm/boardFormUpdate.php:47
+msgid "Please enter the Board ID."
+msgstr "게시판 아이디를 입력해 주세요."
+
+#: adm/boardFormUpdate.php:50
+msgid "Please enter the Board Title."
+msgstr "게시판 제목을 입력해 주세요."
+
+#: adm/boardFormUpdate.php:68
+#, php-format
+msgid "%s is duplicated Board ID."
+msgstr "%s 는 중복된 게시판 아이디 입니다."
+
+#: adm/boardFormUpdate.php:117 adm/memberFormUpdate.php:181
+msgid ""
+"An error occurred while adding or editing the information. Please try again."
+msgstr "정보 추가 또는 수정 중 오류가 발생했습니다. 다시 시도해 주십시오."
+
+#: adm/config.php:5 adm/configUpdate.php:5
+msgid "Only super administrators can access."
+msgstr "최고관리자만 접근할 수 있습니다."
+
+#: adm/config.php:7 adm/sidebarMenu.php:15
+msgid "Configuration"
+msgstr "환경설정"
+
+#: adm/config.php:20
+msgid "Site name"
+msgstr "사이트명"
+
+#: adm/config.php:27
+msgid "Site url"
+msgstr "사이트 URL"
+
+#: adm/config.php:34
+msgid "Site index"
+msgstr "사이트 Index"
+
+#: adm/config.php:37
+msgid "Choose site index"
+msgstr "사이트 Index 선택"
+
+#: adm/config.php:55
+msgid "Site Locale"
+msgstr "사이트 언어"
+
+#: adm/config.php:70
+msgid "Email sending name"
+msgstr "메일 발송이름"
+
+#: adm/config.php:77
+msgid "Email sending address"
+msgstr "메일 발송주소"
+
+#: adm/config.php:84
+msgid "Theme"
+msgstr "테마"
+
+#: adm/config.php:99
+msgid "reCAPTCHA Site key"
+msgstr "reCAPTCHA 사이트키"
+
+#: adm/config.php:106
+msgid "reCAPTCHA secret key"
+msgstr "reCAPTCHA 시크릿키"
+
+#: adm/config.php:113
+msgid "CSS version"
+msgstr "CSS 버전"
+
+#: adm/config.php:120
+msgid "JavaScript version"
+msgstr "JavaScript 버전"
+
+#: adm/config.php:143
+msgid "Max member level"
+msgstr "최대 회원레벨"
+
+#: adm/config.php:150
+msgid "Sign Up member level"
+msgstr "회원가입 레벨"
+
+#: adm/config.php:157
+msgid "Administrator level"
+msgstr "최고관리자 레벨"
+
+#: adm/config.php:164
+msgid "Token valid seconds"
+msgstr "토큰 유효시간(초)"
+
+#: adm/config.php:171
+msgid "Minimum password length"
+msgstr "비밀번호 최소글자수"
+
+#: adm/config.php:178 adm/memberForm.php:108 member/signup.php:100
+msgid "Google 2-factor authentication"
+msgstr "구글 2단계인증"
+
+#: adm/config.php:188
+msgid "Excluded agent"
+msgstr "제외 에이전트"
+
+#: adm/config.php:191
+msgid ""
+"Enter the user agent to exclude from the visit log by separating it with "
+"enter."
+msgstr "방문 로그에서 제외할 사용자 에이전트를 엔터로 구분해 입력해 주세요."
+
+#: adm/config.php:196
+msgid "Meta description"
+msgstr "메타디스크립션"
+
+#: adm/config.php:203
+msgid "Meta Keywords"
+msgstr "메타키워드"
+
+#: adm/config.php:210
+msgid "Favicon"
+msgstr "파비콘"
+
+#: adm/config.php:219
+msgid "Favicon delete"
+msgstr "파비콘 삭제"
+
+#: adm/configUpdate.php:69 adm/pagesFormUpdate.php:47
+#: adm/pagesFormUpdate.php:264
+msgid "An error occurred while editing the information. Please try again."
+msgstr "정보 수정 중 오류가 발생했습니다. 다시 시도해 주십시오."
+
+#: adm/header.php:11 setupRun.php:347
+msgid "Home"
+msgstr "홈"
+
+#: adm/header.php:14
+msgid "Log Out"
+msgstr "로그아웃"
+
+#: adm/index.php:4 adm/sidebarMenu.php:3
+msgid "Dashboard"
+msgstr "대시보드"
+
+#: adm/index.php:40
+msgid "Posting Status"
+msgstr "게시글 현황"
+
+#: adm/index.php:46
+msgid "Visiting Status"
+msgstr "방문 현황"
+
+#: adm/index.php:108
+msgid "Visits"
+msgstr "방문자"
+
+#: adm/member.php:4 adm/memberForm.php:4 adm/memberForm.php:98
+#: adm/sidebarMenu.php:4 adm/sidebarMenu.php:6
+msgid "Member"
+msgstr "회원"
+
+#: adm/member.php:85 adm/member.php:102 adm/memberForm.php:65
+#: member/findPassword.php:30 member/signup.php:74 setup.php:62
+msgid "Email"
+msgstr "이메일"
+
+#: adm/member.php:86 adm/member.php:103 adm/memberForm.php:79
+msgid "Level"
+msgstr "레벨"
+
+#: adm/member.php:87 adm/member.php:99 adm/visiting.php:152
+msgid "Number"
+msgstr "번호"
+
+#: adm/member.php:101 adm/memberForm.php:58 member/signup.php:67 setup.php:56
+msgid "Name"
+msgstr "이름"
+
+#: adm/member.php:104 adm/memberForm.php:143
+msgid "Leave"
+msgstr "탈퇴"
+
+#: adm/member.php:105 adm/memberForm.php:152
+msgid "Block"
+msgstr "차단"
+
+#: adm/member.php:106
+msgid "Member since"
+msgstr "회원가입"
+
+#: adm/memberForm.php:25 adm/memberFormUpdate.php:74
+#: member/findPassword2.php:30 member/loginCheck.php:42
+#: member/memberLeave.php:19 member/passwordCheck.php:43
+#: member/signupRun.php:116
+msgid "Member information does not exist."
+msgstr "회원정보가 존재하지 않습니다."
+
+#: adm/memberForm.php:28 adm/memberFormUpdate.php:77
+msgid "Members of a higher level than you can not modify."
+msgstr "자신보다 높은 레벨의 회원은 수정할 수 없습니다."
+
+#: adm/memberForm.php:72 board/password.php:42 board/password.php:43
+#: member/login.php:30 member/login.php:31 member/password.php:22
+#: member/password.php:23 member/signup.php:81 setup.php:68
+msgid "Password"
+msgstr "비밀번호"
+
+#: adm/memberForm.php:95
+msgid "Member Tyep"
+msgstr "회원타입"
+
+#: adm/memberForm.php:99
+msgid "Manager"
+msgstr "관리자"
+
+#: adm/memberForm.php:101
+msgid "Administrator"
+msgstr "최고관리자"
+
+#: adm/memberForm.php:133
+msgid "Memo"
+msgstr "메모"
+
+#: adm/memberForm.php:140
+msgid "Member withdrawal date"
+msgstr "회원탈퇴일"
+
+#: adm/memberForm.php:149
+msgid "Member blocking date"
+msgstr "회원차단일"
+
+#: adm/memberForm.php:159 member/login.php:52 member/signup.php:35
+#: member/signup.php:47 member/signup.php:146 member/terms.php:7
+#: member/terms.php:35
+msgid "Sign Up"
+msgstr "회원가입"
+
+#: adm/memberFormUpdate.php:25 ajax/memberId.php:7 js/signup.js.php:100
+#: member/signupRun.php:31 setupRun.php:25
+msgid "Please enter ID."
+msgstr "ID를 입력해 주십시오."
+
+#: adm/memberFormUpdate.php:28 ajax/memberId.php:10 member/loginCheck.php:28
+#: member/passwordCheck.php:29 member/signupRun.php:34 setupRun.php:28
+msgid "Please enter the ID format to fit."
+msgstr "ID를 형식에 맞게 입력해 주십시오."
+
+#: adm/memberFormUpdate.php:32 js/signup.js.php:105 member/signupRun.php:38
+#: setupRun.php:31
+msgid "Please enter Name."
+msgstr "이름을 입력해 주십시오."
+
+#: adm/memberFormUpdate.php:35 ajax/memberEmail.php:7 js/findPassword.js.php:14
+#: js/signup.js.php:110 member/findPassword2.php:16 member/signupRun.php:41
+#: setupRun.php:34
+msgid "Please enter Email."
+msgstr "이메일을 입력해 주십시오."
+
+#: adm/memberFormUpdate.php:38 ajax/memberEmail.php:10
+#: member/findPassword2.php:19 member/loginCheck.php:22
+#: member/passwordCheck.php:23 member/signupRun.php:44 setupRun.php:37
+msgid "Please enter the Email format to fit."
+msgstr "이메일 형식에 맞게 입력해 주십시오."
+
+#: adm/memberFormUpdate.php:42 adm/memberFormUpdate.php:45 js/signup.js.php:117
+#: js/signup.js.php:130 member/signupRun.php:48 member/signupRun.php:55
+#, php-format
+msgid "Please enter your password at least %d character."
+msgid_plural "Please enter your password at least %d characters."
+msgstr[0] "비밀번호를 %d 글자 이상 입력해 주십시오."
+
+#: adm/memberFormUpdate.php:57 ajax/memberId.php:21 member/signupRun.php:66
+msgid "This ID is duplicated."
+msgstr "이미 사용 중인 아이디입니다."
+
+#: adm/memberFormUpdate.php:68 ajax/memberEmail.php:21 member/signupRun.php:77
+msgid "This email is duplicated."
+msgstr "이미 사용 중인 이메일입니다."
+
+#: adm/memberFormUpdate.php:139
+msgid "Members of a higher level than you can not add."
+msgstr "자신보다 높은 레벨의 회원을 추가할 수 없습니다."
+
+#: adm/pages.php:4 adm/pagesForm.php:7 adm/sidebarMenu.php:9
+msgid "Pages"
+msgstr "페이지"
+
+#: adm/pages.php:82 adm/pagesForm.php:114
+msgid "Page ID"
+msgstr "페이지아이디"
+
+#: adm/pages.php:83
+msgid "Page Subject"
+msgstr "제목"
+
+#: adm/pages.php:84
+msgid "Page Content"
+msgstr "내용"
+
+#: adm/pages.php:97 adm/pagesForm.php:121
+msgid "Subject"
+msgstr "제목"
+
+#: adm/pages.php:98
+msgid "Page Created"
+msgstr "생성일"
+
+#: adm/pages.php:99
+msgid "View"
+msgstr "조회"
+
+#: adm/pagesForm.php:59
+msgid "The page does not exist."
+msgstr "페이지가 존재하지 않습니다."
+
+#: adm/pagesForm.php:104
+msgid "Page Use"
+msgstr "사용"
+
+#: adm/pagesForm.php:128
+msgid "Header"
+msgstr "상단파일"
+
+#: adm/pagesForm.php:150
+msgid "Footer"
+msgstr "하단파일"
+
+#: adm/pagesForm.php:166
+msgid "Tags"
+msgstr "태그"
+
+#: adm/pagesForm.php:175
+msgid "Write"
+msgstr "작성"
+
+#: adm/pagesForm.php:337 adm/pagesFormUpdate.php:88
+msgid "Please enter a Page ID"
+msgstr "페이지 아이디를 입력해 주십시오."
+
+#: adm/pagesForm.php:342 adm/pagesFormUpdate.php:91
+msgid "Please enter a Subject"
+msgstr "제목을 입력해 주십시오."
+
+#: adm/pagesForm.php:347 adm/pagesFormUpdate.php:94
+msgid "Please enter a Contents"
+msgstr "내용을 입력해 주십시오."
+
+#: adm/pagesFormUpdate.php:21 adm/pagesFormUpdate.php:151
+msgid "Page does not exist"
+msgstr "페이지가 존재하지 않습니다."
+
+#: adm/pagesFormUpdate.php:101
+msgid "Please enter the header file correctly"
+msgstr "상단 파일을 올바르게 입력해 주십시오"
+
+#: adm/pagesFormUpdate.php:104 adm/pagesFormUpdate.php:112
+#, php-format
+msgid "File %s does not exist."
+msgstr "파일 %s 는 존재하지 않습니다."
+
+#: adm/pagesFormUpdate.php:109
+msgid "Please enter the footer file correctly"
+msgstr "하단 파일을 올바르게 입력해 주십시오"
+
+#: adm/pagesFormUpdate.php:122 adm/pagesFormUpdate.php:159
+#, php-format
+msgid "%s is a duplicate page id"
+msgstr "%s 는 중복된 페이지 아이디 입니다."
+
+#: adm/sidebarMenu.php:10 adm/visiting.php:6
+msgid "Visiting"
+msgstr "방문기록"
+
+#: adm/sidebarMenu.php:14 adm/sitemap.php:4
+msgid "Sitemap"
+msgstr "사이트맵"
+
+#: adm/sitemap.php:14
+msgid "Create Sitemap"
+msgstr "사이트맵 생성"
+
+#: adm/sitemap.php:15
+msgid "Recently created"
+msgstr "최근 생성일"
+
+#: adm/visiting.php:130 adm/visiting.php:153
+msgid "IP"
+msgstr "IP"
+
+#: adm/visiting.php:131 adm/visiting.php:154
+msgid "Referrer"
+msgstr "리퍼러"
+
+#: adm/visiting.php:155
+msgid "OS"
+msgstr "OS"
+
+#: adm/visiting.php:156
+msgid "Device"
+msgstr "접속기기"
+
+#: adm/visiting.php:157
+msgid "Browser"
+msgstr "브라우저"
+
+#: adm/visiting.php:158
+msgid "Visiting date"
+msgstr "방문일시"
+
+#: board/board.inc.php:8
+msgid "The board does not exist."
+msgstr "게시판 정보가 존재하지 않습니다."
+
+#: board/commentAction.php:12 board/commentAction.php:52
+#: board/commentUpdate.php:18 board/commentUpdate.php:91
+msgid "The comment does not exist."
+msgstr "댓글이 존재하지 않습니다."
+
+#: board/commentAction.php:19 board/commentUpdate.php:181
+msgid ""
+"You can not edit comment made by members of a higher level than yourself."
+msgstr "자신보다 높은 레벨의 회원이 작성한 댓글은 수정 할 수 없습니다."
+
+#: board/commentAction.php:24 board/commentUpdate.php:186
+msgid "You can not edit it because it is not your own comment."
+msgstr "자신의 댓글만 수정할 수 있습니다."
+
+#: board/commentAction.php:27 board/commentUpdate.php:189
+msgid "Please log in and edit your comment."
+msgstr "회원 로그인 후 댓글을 수정해 주십시오."
+
+#: board/commentAction.php:34 board/commentUpdate.php:104
+msgid "You do not have permission to reply comment."
+msgstr "댓글에 댓글을 작성할 수 있는 권한이 없습니다."
+
+#: board/commentAction.php:58 board/commentUpdate.php:24
+msgid ""
+"You can not delete comment made by members of a higher level than yourself."
+msgstr "자신보다 높은 레벨의 회원이 작성한 댓글은 삭제할 수 없습니다."
+
+#: board/commentAction.php:63 board/commentUpdate.php:29
+msgid "You can not delete it because it is not your own comment."
+msgstr "자신의 댓글만 삭제할 수 있습니다."
+
+#: board/commentAction.php:66 board/commentUpdate.php:32
+msgid "Please log in and delete your comment."
+msgstr "회원 로그인 후 댓글을 삭제해 주십시오."
+
+#: board/commentUpdate.php:35 board/commentUpdate.php:118
+#: board/commentUpdate.php:192 board/passwordCheck.php:13
+#: board/writeUpdate.php:102 js/board.js.php:33 js/comment.js.php:40
+#: member/loginCheck.php:18 member/passwordCheck.php:19
+msgid "Please enter a Password."
+msgstr "비밀번호를 입력해 주십시오."
+
+#: board/commentUpdate.php:38
+msgid "Comments can not be deleted because the passwords do not match."
+msgstr "비밀번호가 일치하지 않아 댓글을 삭제할 수 없습니다."
+
+#: board/commentUpdate.php:52
+msgid "The comment was deleted."
+msgstr "삭제된 댓글입니다."
+
+#: board/commentUpdate.php:79 board/writeUpdate.php:18 js/board.js.php:50
+#: js/comment.js.php:52 js/findPassword.js.php:20 js/login.js.php:36
+#: js/signup.js.php:137 member/loginCheck.php:73 member/signupRun.php:81
+msgid "Please check the anti-spam code."
+msgstr "스팸방지 코드를 확인해 주십시오."
+
+#: board/commentUpdate.php:85 board/writeUpdate.php:34 js/board.js.php:44
+#: js/comment.js.php:46
+msgid "Please enter a Contents."
+msgstr "내용을 입력해 주십시오."
+
+#: board/commentUpdate.php:97 board/commentUpdate.php:100
+msgid "You do not have permission to write a comment."
+msgstr "댓글을 작성할 권한이 없습니다."
+
+#: board/commentUpdate.php:115 board/writeUpdate.php:99 js/board.js.php:24
+#: js/comment.js.php:31
+msgid "Please enter a Name."
+msgstr "이름을 입력해 주십시오."
+
+#: board/commentUpdate.php:195
+msgid "Comments can not be edited because the passwords do not match."
+msgstr "비밀번호가 일치하지 않아 댓글을 수정할 수 없습니다."
+
+#: board/commentUpdate.php:206 board/writeUpdate.php:194
+msgid "There was an error processing your request. Please try again."
+msgstr "요청을 처리하는 동안 오류가 발생했습니다. 다시 시도해 주십시오."
+
+#: board/delete.php:10 board/write.php:20 board/write.php:74
+#: board/writeUpdate.php:45
+msgid "The post does not exist."
+msgstr "게시글이 존재하지 않습니다."
+
+#: board/delete.php:16
+msgid ""
+"You can not delete posts made by members of a higher level than yourself."
+msgstr "자신보다 높은 레벨의 회원이 작성한 게시물은 삭제할 수 없습니다."
+
+#: board/delete.php:20
+msgid "You can not delete it because it is not your own post."
+msgstr "자신의 게시글만 삭제할 수 있습니다."
+
+#: board/delete.php:23
+msgid "Please log in and delete your post."
+msgstr "회원 로그인 후 게시글을 삭제해 주십시오."
+
+#: board/delete.php:92
+msgid "The post was deleted."
+msgstr "삭제된 게시글입니다."
+
+#: board/download.php:18
+msgid "File information does not exist."
+msgstr "파일 정보가 존재하지 않습니다."
+
+#: board/download.php:21
+msgid "You do not have permission to download files."
+msgstr "파일 다운로드 권한이 없습니다."
+
+#: board/download.php:25
+msgid "The file does not exist."
+msgstr "파일이 존재하지 않습니다."
+
+#: board/list.php:7
+msgid "You do not have access to the board."
+msgstr "게시판에 접근할 권한이 없습니다."
+
+#: board/password.php:10 board/passwordCheck.php:20 board/view.php:16
+msgid "No posts found."
+msgstr "게시글이 없습니다."
+
+#: board/password.php:12
+msgid "Check post password"
+msgstr "비밀번호  확인"
+
+#: board/password.php:46 member/password.php:26
+msgid "Submit"
+msgstr "Submit"
+
+#: board/passwordCheck.php:25
+msgid "Passwords do not match."
+msgstr "게시글 작성권한이 없습니다."
+
+#: board/view.php:9
+msgid "You do not have permission to view posts."
+msgstr "게시글 열람권한이 없습니다."
+
+#: board/view.php:24
+msgid "You can not read it because it is not your own post."
+msgstr "자신의 게시글만 열람할 수 있습니다."
+
+#: board/view.php:27
+msgid "Please log in and read your post."
+msgstr "회원 로그인 후 게시글을 열람해 주십시오."
+
+#: board/write.php:23 board/write.php:83 board/writeUpdate.php:57
+#: board/writeUpdate.php:60
+msgid "You do not have permission to write a post."
+msgstr "게시글 작성권한이 없습니다."
+
+#: board/write.php:29 board/writeUpdate.php:167
+msgid "You can not edit posts made by members of a higher level than yourself."
+msgstr "자신보다 높은 레벨의 회원이 작성한 게시글은 수정할 수 없습니다."
+
+#: board/write.php:33 board/writeUpdate.php:172
+msgid "You can not edit it because it is not your own post."
+msgstr "자신의 게시글만 수정할 수 있습니다."
+
+#: board/write.php:36 board/writeUpdate.php:175
+msgid "Please log in and edit your post."
+msgstr "회원 로그인 후 게시글을 수정해 주십시오."
+
+#: board/write.php:77 board/writeUpdate.php:67
+msgid "You do not have permission to reply."
+msgstr "답글 작성권한이 없습니다."
+
+#: board/writeUpdate.php:31 js/board.js.php:39
+msgid "Please enter a Subject."
+msgstr "제목을 입력해 주십시오."
+
+#: board/writeUpdate.php:50
+msgid "You do not have permission to write a notice."
+msgstr "공지글 작성권한이 없습니다."
+
+#: board/writeUpdate.php:64
+msgid "You can not reply to notice posts."
+msgstr "공지글엔 답글을 작성할 수 없습니다."
+
+#: board/writeUpdate.php:88
+msgid "Please select the category correctly."
+msgstr "분류를 선택해 주십시오."
+
+#: board/writeUpdate.php:270
+#, php-format
+msgid ""
+"\"%s\" can not be uploaded because it is larger than the value set on the "
+"server."
+msgstr "\"%s\"은(는) 서버의 설정값보다 크기 때문에 업로드할 수 없습니다."
+
+#: board/writeUpdate.php:273
+#, php-format
+msgid "\"%s\" was not successfully uploaded."
+msgstr "\"%s\"의 업로드에 실패했습니다."
+
+#: js/adm.js.php:54 js/adm.js.php:62
+msgid "Are you sure you want to delete?"
+msgstr "정말 삭제하시겠습니까?"
+
+#: js/board.js.php:61
+msgid "Are you sure you want to delete this post?"
+msgstr "게시글을 삭제하시겠습니까?"
+
+#: js/comment.js.php:58 js/comment.js.php:98
+msgid "Are you sure you want to delete the comment?"
+msgstr "댓글을 삭제하시겠습니까?"
+
+#: js/login.js.php:17 js/password.js.php:20 member/loginCheck.php:15
+#: member/passwordCheck.php:16
+msgid "Please enter your member ID or Email address."
+msgstr "아이디 또는 이메일을 입력해 주십시오."
+
+#: js/login.js.php:22 js/password.js.php:25
+msgid "Please enter Password."
+msgstr "비밀번호를 입력해 주십시오."
+
+#: js/login.js.php:29
+msgid "Please enter the one time password."
+msgstr "일회용 비밀번호를 입력해 주십시오."
+
+#: js/signup.js.php:10 member/signup.php:24
+msgid "Please accept the terms and conditions."
+msgstr "이용약관에 동의해 주십시오."
+
+#: js/signup.js.php:15 member/signup.php:27
+msgid "Please accept the privacy policy."
+msgstr "개인정보처리방침에 동의해 주십시오."
+
+#: js/signup.js.php:123 member/signupRun.php:51
+msgid "The password you entered does not match."
+msgstr "입력하신 비밀번호가 서로 일치하지 않습니다."
+
+#: member/findPassword.php:9 member/findPassword.php:41 member/login.php:54
+msgid "Find Password"
+msgstr "비밀번호 찾기"
+
+#: member/findPassword.php:27
+msgid "Enter your e-mail address and we will send you a new password."
+msgstr "이메일을 입력하시면 새로운 비밀번호를 보내드립니다."
+
+#: member/findPassword2.php:48
+msgid "The new password you requested."
+msgstr "요청하신 새로운 비밀번호입니다."
+
+#: member/findPassword2.php:52
+msgid "New password"
+msgstr "새 비밀번호"
+
+#: member/findPassword2.php:54 member/login.php:7 member/login.php:48
+msgid "Log In"
+msgstr "로그인"
+
+#: member/findPassword2.php:67
+msgid "You have successfully sent a new password to the email you entered."
+msgstr "입력하신 이메일로 새로운 비밀번호를 발송했습니다."
+
+#: member/findPassword2.php:69
+msgid "There was an error processing your request. please try again."
+msgstr "요청을 처리하는 동안 오류가 발생했습니다. 다시 시도해 주십시오."
+
+#: member/login.php:28 member/login.php:29 member/password.php:20
+#: member/password.php:21
+msgid "ID or Email"
+msgstr "아이디 또는 이메일"
+
+#: member/login.php:42 member/login.php:43
+msgid "One Time Password"
+msgstr "일회용 비밀번호"
+
+#: member/loginCheck.php:45 member/passwordCheck.php:46
+msgid "The member information does not match."
+msgstr "일치하는 회원정보가 없습니다."
+
+#: member/loginCheck.php:48 member/memberLeave.php:23
+msgid "I am a member who has left."
+msgstr "탈퇴한 회원입니다."
+
+#: member/loginCheck.php:51
+msgid "Member access is blocked."
+msgstr "접근 차단 회원입니다."
+
+#: member/loginCheck.php:66
+msgid "Please enter the one time password correctly."
+msgstr "일회용 비밀번호를 올바르게 입력해 주십시오."
+
+#: member/memberLeave.php:8
+msgid "Administrators can not leave."
+msgstr "최고관리자는 탈퇴할 수 없습니다."
+
+#: member/password.php:7
+msgid "Password Confirm"
+msgstr "비밀번호 확인"
+
+#: member/password.php:36
+msgid "Confirm membership withdrawal"
+msgstr "회원탈퇴 확인"
+
+#: member/password.php:46
+msgid "Are you sure you want to continue with membership withdrawal?"
+msgstr "회원 탈퇴를 계속 하시겠습니까?"
+
+#: member/password.php:50
+msgid "Cancel"
+msgstr "취소"
+
+#: member/password.php:51
+msgid "Confirm"
+msgstr "확인"
+
+#: member/signup.php:33
+msgid "My Account"
+msgstr "정보수정"
+
+#: member/signup.php:89
+msgid "Re-enter password"
+msgstr "비밀번호 확인"
+
+#: member/signup.php:128
+msgid "Anti-spam code"
+msgstr "스팸방지코드"
+
+#: member/signup.php:156
+msgid "Your account has been created."
+msgstr "회원 계정이 생성됐습니다."
+
+#: member/signup.php:160
+msgid "Go Home"
+msgstr "Go Home"
+
+#: member/signupRun.php:107
+msgid "You can not sign up for an id or email duplication or other errors."
+msgstr "아이디 또는 이메일 중복 또는 다른 이유로 회원가입할 수 없습니다."
+
+#: member/terms.php:20
+msgid "Terms and conditions"
+msgstr "이용약관"
+
+#: member/terms.php:24 member/terms.php:31
+msgid "I agree."
+msgstr "동의합니다."
+
+#: member/terms.php:27
+msgid "Privacy policy"
+msgstr "개인정보처리방침"
+
+#: setup.php:8 setupRun.php:14
+msgid "Setup can not be executed."
+msgstr "설치 프로세스를 실행할 수 없습니다."
+
+#: setup.php:44
+#, php-format
+msgid "Do not have permission to write to the %s folder."
+msgstr "%s 폴더에 쓰기 권한이 없습니다."
+
+#: setup.php:75
+msgid "Setup"
+msgstr "Setup"
+
+#: setupRun.php:40
+msgid "Please enter Password"
+msgstr "비밀번호를 입력해 주십시오"
+
+#: setupRun.php:345
+msgid "Complete!"
+msgstr "Complete!"
+
+#: setupRun.php:346
+msgid "NT-Core Setup is done well"
+msgstr "NT-Core Setup is done well"
+
+#: src/lib/functions.php:182
+msgid "Y"
+msgstr "Y"
+
+#: src/lib/functions.php:182
+msgid "N"
+msgstr "N"
+
+#~ msgid "Please enter your email and password."
+#~ msgstr "이메일, 비밀번호를 입력해 주십시오."
+
+#~ msgid "Please check your email."
+#~ msgstr "입력하신 이메일을 확인해 주십시오."
+
+#~ msgid "Close"
+#~ msgstr "닫기"
+
+#~ msgid "Date"
+#~ msgstr "가입일"
+
+#~ msgid "UID"
+#~ msgstr "회원번호"
+
+#~ msgid "List Level"
+#~ msgstr "목록보기 레벨"
+
+#~ msgid "View Level"
+#~ msgstr "내용보기 레벨"
+
+#~ msgid "Reply Level"
+#~ msgstr "답글작성 레벨"
+
+#~ msgid "Use Board"
+#~ msgstr "게시판 사용"
+
+#~ msgid "Korean"
+#~ msgstr "한국어"
+
+#~ msgid "English"
+#~ msgstr "영어"
+
+#~ msgid "Create account"
+#~ msgstr "Create Account"

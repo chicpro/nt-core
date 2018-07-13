@@ -1,0 +1,24 @@
+@charset "utf-8";
+
+.board-list .icon {width: 14px;height: 14px;vertical-align: middle;}
+.board-list .icon-notice {width: 15px;height: 15px;vertical-align: middle;}
+.file-list .icon {width: 14px;height: 14px;vertical-align: middle;}
+.link-list .icon {width: 14px;height: 14px;vertical-align: middle;}
+
+.comment-list {position: relative;}
+.comment-list .reply-icon {position:absolute;left:0; top: 10px; width:16px;height:16px;}
+.comment-button .icon {width: 15px; height: 15px;}
+
+.index {padding: 100px 0}
+.index .icon {width:120px; height:120px}
+
+.page-404 {padding: 100px 0}
+.page-404 .icon {width:120px; height:120px}
+
+.form-terms .terms {height:200px;overflow-wrap: break-word;word-wrap: break-word;hyphens: auto;overflow-y:auto;color:#7c7c7c}
+.form-terms .terms strong {color:#2b2b2b}
+.form-terms .terms b {display:inline-block;margin-bottom:10px;color:#565656}
+
+.tags-list .tag {color:#46799b;background:#e0eaf1;white-space:nowrap;overflow:hidden;border-radius:2px}
+
+.footer {width: 100%;height: 60px;line-height: 60px;background-color: #f5f5f5;}

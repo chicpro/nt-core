@@ -1,0 +1,28 @@
+{
+	"authors": [
+		{
+			"name": "Seongho Jang",
+			"email": "chicpro@gmail.com",
+			"homepage": "https://ncube.net"
+		}
+	],
+	"require": {
+		"php": ">=7.0.0",
+		"ext-curl": "*",
+		"phpmailer/phpmailer": ">=6.0",
+		"klein/klein": ">=2.0",
+		"jasongrimes/paginator": ">=1.0",
+		"mobiledetect/mobiledetectlib": ">=2.8",
+		"ezyang/htmlpurifier": ">=4.0",
+		"chrisjean/php-ico": ">=1.0",
+		"ua-parser/uap-php": ">=3.0",
+		"evert/sitemap-php": ">=1.0",
+		"phpgangsta/googleauthenticator": "dev-master"
+	},
+	"autoload": {
+		"psr-4": {
+			"": "src/"
+		}
+	},
+	"minimum-stability": "stable"
+}

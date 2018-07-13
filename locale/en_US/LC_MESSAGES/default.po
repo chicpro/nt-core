@@ -1,0 +1,1023 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: 2018-07-06 11:12+0900\n"
+"PO-Revision-Date: 2018-07-06 11:12+0900\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: en_US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.0.6\n"
+"X-Poedit-Basepath: ../../..\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: _n:1,2;_d;_dn:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: .git\n"
+"X-Poedit-SearchPathExcluded-1: theme\n"
+"X-Poedit-SearchPathExcluded-2: vendor\n"
+"X-Poedit-SearchPathExcluded-3: js/tinymce\n"
+
+#: adm/_common.php:6
+msgid "Only the administrator can access it."
+msgstr "Only the administrator can access it."
+
+#: adm/board.php:4 adm/boardForm.php:4 adm/sidebarMenu.php:8
+msgid "Board"
+msgstr "Board"
+
+#: adm/board.php:68 adm/member.php:72 adm/pages.php:70 adm/visiting.php:147
+msgid "Total"
+msgstr "Total"
+
+#: adm/board.php:77 adm/member.php:81 adm/pages.php:79
+msgid "All items"
+msgstr "All items"
+
+#: adm/board.php:80 adm/boardForm.php:36
+msgid "Board ID"
+msgstr "Board ID"
+
+#: adm/board.php:81
+msgid "Board Title"
+msgstr "Board Title"
+
+#: adm/board.php:86 adm/member.php:92 adm/pages.php:89 adm/visiting.php:140
+msgid "Search"
+msgstr "Search"
+
+#: adm/board.php:93 adm/member.php:84 adm/member.php:100 adm/memberForm.php:50
+#: adm/pages.php:96 member/signup.php:60 setup.php:49
+msgid "ID"
+msgstr "ID"
+
+#: adm/board.php:94
+msgid "Title"
+msgstr "Title"
+
+#: adm/board.php:95 adm/index.php:75
+msgid "Posts"
+msgstr "Posts"
+
+#: adm/board.php:96 adm/index.php:86
+msgid "Comments"
+msgstr "Comments"
+
+#: adm/board.php:97
+msgid "Files"
+msgstr "Files"
+
+#: adm/board.php:98
+msgid "Links"
+msgstr "Links"
+
+#: adm/board.php:99 adm/pages.php:100
+msgid "Use"
+msgstr "Use"
+
+#: adm/board.php:100 adm/member.php:107 adm/pages.php:101 member/signup.php:49
+msgid "Edit"
+msgstr "Edit"
+
+#: adm/board.php:142 adm/member.php:132 adm/pages.php:123 adm/visiting.php:195
+msgid "No data available."
+msgstr "No data available."
+
+#: adm/boardForm.php:22 adm/boardFormUpdate.php:95
+msgid "Board information does not exist."
+msgstr "Board information does not exist."
+
+#: adm/boardForm.php:40 adm/memberForm.php:54 setup.php:52
+msgid "Only alphabetic, numeric, and _ can be used"
+msgstr "Only alphabetic, numeric, and _ can be used"
+
+#: adm/boardForm.php:46
+msgid "Board title"
+msgstr "Board title"
+
+#: adm/boardForm.php:53
+msgid "Use board"
+msgstr "Use board"
+
+#: adm/boardForm.php:56 adm/boardForm.php:189 adm/boardForm.php:199
+#: adm/config.php:181 adm/memberForm.php:111 adm/pagesForm.php:107
+#: member/signup.php:103
+msgid "Used"
+msgstr "Used"
+
+#: adm/boardForm.php:57 adm/boardForm.php:190 adm/boardForm.php:200
+#: adm/config.php:182 adm/memberForm.php:112 adm/pagesForm.php:108
+#: adm/pagesForm.php:138 adm/pagesForm.php:160 member/signup.php:104
+msgid "Not used"
+msgstr "Not used"
+
+#: adm/boardForm.php:63
+msgid "Board category"
+msgstr "Board category"
+
+#: adm/boardForm.php:66
+msgid "Input example : Category1,Category2"
+msgstr "Input example : Category1,Category2"
+
+#: adm/boardForm.php:71
+msgid "Subject length"
+msgstr "Subject length"
+
+#: adm/boardForm.php:78 adm/config.php:129
+msgid "Lines per page"
+msgstr "Lines per page"
+
+#: adm/boardForm.php:85 adm/config.php:136
+msgid "Number of pages"
+msgstr "Number of pages"
+
+#: adm/boardForm.php:92
+msgid "List view permissions"
+msgstr "List view permissions"
+
+#: adm/boardForm.php:108
+msgid "Content view permissions"
+msgstr "Content view permissions"
+
+#: adm/boardForm.php:124
+msgid "Posts written permissions"
+msgstr "Posts written permissions"
+
+#: adm/boardForm.php:140
+msgid "Comments written permissions"
+msgstr "Comments written permissions"
+
+#: adm/boardForm.php:156
+msgid "Permission to create replies"
+msgstr "Permission to create replies"
+
+#: adm/boardForm.php:172
+msgid "Number of attachments"
+msgstr "Number of attachments"
+
+#: adm/boardForm.php:179
+msgid "Number of links"
+msgstr "Number of links"
+
+#: adm/boardForm.php:186
+msgid "Use Captcha"
+msgstr "Use Captcha"
+
+#: adm/boardForm.php:196
+msgid "Use Comment Captcha"
+msgstr "Use Comment Captcha"
+
+#: adm/boardForm.php:208 adm/config.php:229 adm/memberForm.php:167
+msgid "Save"
+msgstr "Save"
+
+#: adm/boardForm.php:209 adm/memberForm.php:168 adm/pagesForm.php:176
+msgid "List"
+msgstr "List"
+
+#: adm/boardFormUpdate.php:8 adm/configUpdate.php:11 adm/memberFormUpdate.php:8
+#: adm/pagesFormUpdate.php:9 board/commentAction.php:89
+#: board/commentUpdate.php:8 board/commentUpdate.php:208 board/download.php:9
+#: board/password.php:25 board/passwordCheck.php:8 board/passwordCheck.php:40
+#: board/writeUpdate.php:12 board/writeUpdate.php:196
+#: member/findPassword2.php:11 member/loginCheck.php:9
+#: member/passwordCheck.php:10 member/signupRun.php:10 member/signupRun.php:26
+msgid "Please use it in the correct way."
+msgstr "Please use it in the correct way."
+
+#: adm/boardFormUpdate.php:47
+msgid "Please enter the Board ID."
+msgstr "Please enter the Board ID."
+
+#: adm/boardFormUpdate.php:50
+msgid "Please enter the Board Title."
+msgstr "Please enter the Board Title."
+
+#: adm/boardFormUpdate.php:68
+#, php-format
+msgid "%s is duplicated Board ID."
+msgstr "%s is duplicated Board ID."
+
+#: adm/boardFormUpdate.php:117 adm/memberFormUpdate.php:181
+msgid ""
+"An error occurred while adding or editing the information. Please try again."
+msgstr ""
+"An error occurred while adding or editing the information. Please try again."
+
+#: adm/config.php:5 adm/configUpdate.php:5
+msgid "Only super administrators can access."
+msgstr "Only super administrators can access."
+
+#: adm/config.php:7 adm/sidebarMenu.php:15
+msgid "Configuration"
+msgstr "Configuration"
+
+#: adm/config.php:20
+msgid "Site name"
+msgstr "Site name"
+
+#: adm/config.php:27
+msgid "Site url"
+msgstr "Site URL"
+
+#: adm/config.php:34
+msgid "Site index"
+msgstr "Site index"
+
+#: adm/config.php:37
+msgid "Choose site index"
+msgstr "Choose site index"
+
+#: adm/config.php:55
+msgid "Site Locale"
+msgstr "Site Locale"
+
+#: adm/config.php:70
+msgid "Email sending name"
+msgstr "Email sending name"
+
+#: adm/config.php:77
+msgid "Email sending address"
+msgstr "Email sending address"
+
+#: adm/config.php:84
+msgid "Theme"
+msgstr "Theme"
+
+#: adm/config.php:99
+msgid "reCAPTCHA Site key"
+msgstr "reCAPTCHA Site key"
+
+#: adm/config.php:106
+msgid "reCAPTCHA secret key"
+msgstr "reCAPTCHA secret key"
+
+#: adm/config.php:113
+msgid "CSS version"
+msgstr "CSS version"
+
+#: adm/config.php:120
+msgid "JavaScript version"
+msgstr "JavaScript version"
+
+#: adm/config.php:143
+msgid "Max member level"
+msgstr "Max member level"
+
+#: adm/config.php:150
+msgid "Sign Up member level"
+msgstr "Sign Up member level"
+
+#: adm/config.php:157
+msgid "Administrator level"
+msgstr "Administrator level"
+
+#: adm/config.php:164
+msgid "Token valid seconds"
+msgstr "Token valid seconds"
+
+#: adm/config.php:171
+msgid "Minimum password length"
+msgstr "Minimum password length"
+
+#: adm/config.php:178 adm/memberForm.php:108 member/signup.php:100
+msgid "Google 2-factor authentication"
+msgstr "Google 2-factor authentication"
+
+#: adm/config.php:188
+msgid "Excluded agent"
+msgstr "Excluded agent"
+
+#: adm/config.php:191
+msgid ""
+"Enter the user agent to exclude from the visit log by separating it with "
+"enter."
+msgstr ""
+"Enter the user agent to exclude from the visit log by separating it with "
+"enter."
+
+#: adm/config.php:196
+msgid "Meta description"
+msgstr "Meta description"
+
+#: adm/config.php:203
+msgid "Meta Keywords"
+msgstr "Meta Keywords"
+
+#: adm/config.php:210
+msgid "Favicon"
+msgstr "Favicon"
+
+#: adm/config.php:219
+msgid "Favicon delete"
+msgstr "Favicon delete"
+
+#: adm/configUpdate.php:69 adm/pagesFormUpdate.php:47
+#: adm/pagesFormUpdate.php:264
+msgid "An error occurred while editing the information. Please try again."
+msgstr "An error occurred while editing the information. Please try again."
+
+#: adm/header.php:11 setupRun.php:347
+msgid "Home"
+msgstr "Home"
+
+#: adm/header.php:14
+msgid "Log Out"
+msgstr "Log Out"
+
+#: adm/index.php:4 adm/sidebarMenu.php:3
+msgid "Dashboard"
+msgstr "Dashboard"
+
+#: adm/index.php:40
+msgid "Posting Status"
+msgstr "Posting Status"
+
+#: adm/index.php:46
+msgid "Visiting Status"
+msgstr "Visiting Status"
+
+#: adm/index.php:108
+msgid "Visits"
+msgstr "Visits"
+
+#: adm/member.php:4 adm/memberForm.php:4 adm/memberForm.php:98
+#: adm/sidebarMenu.php:4 adm/sidebarMenu.php:6
+msgid "Member"
+msgstr "Member"
+
+#: adm/member.php:85 adm/member.php:102 adm/memberForm.php:65
+#: member/findPassword.php:30 member/signup.php:74 setup.php:62
+msgid "Email"
+msgstr "Email"
+
+#: adm/member.php:86 adm/member.php:103 adm/memberForm.php:79
+msgid "Level"
+msgstr "Level"
+
+#: adm/member.php:87 adm/member.php:99 adm/visiting.php:152
+msgid "Number"
+msgstr "Number"
+
+#: adm/member.php:101 adm/memberForm.php:58 member/signup.php:67 setup.php:56
+msgid "Name"
+msgstr "Name"
+
+#: adm/member.php:104 adm/memberForm.php:143
+msgid "Leave"
+msgstr "Leave"
+
+#: adm/member.php:105 adm/memberForm.php:152
+msgid "Block"
+msgstr "Block"
+
+#: adm/member.php:106
+msgid "Member since"
+msgstr "Member since"
+
+#: adm/memberForm.php:25 adm/memberFormUpdate.php:74
+#: member/findPassword2.php:30 member/loginCheck.php:42
+#: member/memberLeave.php:19 member/passwordCheck.php:43
+#: member/signupRun.php:116
+msgid "Member information does not exist."
+msgstr "Member information does not exist."
+
+#: adm/memberForm.php:28 adm/memberFormUpdate.php:77
+msgid "Members of a higher level than you can not modify."
+msgstr "Members of a higher level than you can not modify."
+
+#: adm/memberForm.php:72 board/password.php:42 board/password.php:43
+#: member/login.php:30 member/login.php:31 member/password.php:22
+#: member/password.php:23 member/signup.php:81 setup.php:68
+msgid "Password"
+msgstr "Password"
+
+#: adm/memberForm.php:95
+msgid "Member Tyep"
+msgstr "Member Tyep"
+
+#: adm/memberForm.php:99
+msgid "Manager"
+msgstr "Manager"
+
+#: adm/memberForm.php:101
+msgid "Administrator"
+msgstr "Administrator"
+
+#: adm/memberForm.php:133
+msgid "Memo"
+msgstr "Memo"
+
+#: adm/memberForm.php:140
+msgid "Member withdrawal date"
+msgstr "Member withdrawal date"
+
+#: adm/memberForm.php:149
+msgid "Member blocking date"
+msgstr "Member blocking date"
+
+#: adm/memberForm.php:159 member/login.php:52 member/signup.php:35
+#: member/signup.php:47 member/signup.php:146 member/terms.php:7
+#: member/terms.php:35
+msgid "Sign Up"
+msgstr "Sign Up"
+
+#: adm/memberFormUpdate.php:25 ajax/memberId.php:7 js/signup.js.php:100
+#: member/signupRun.php:31 setupRun.php:25
+msgid "Please enter ID."
+msgstr "Please enter ID."
+
+#: adm/memberFormUpdate.php:28 ajax/memberId.php:10 member/loginCheck.php:28
+#: member/passwordCheck.php:29 member/signupRun.php:34 setupRun.php:28
+msgid "Please enter the ID format to fit."
+msgstr "Please enter the ID format to fit."
+
+#: adm/memberFormUpdate.php:32 js/signup.js.php:105 member/signupRun.php:38
+#: setupRun.php:31
+msgid "Please enter Name."
+msgstr "Please enter Name."
+
+#: adm/memberFormUpdate.php:35 ajax/memberEmail.php:7 js/findPassword.js.php:14
+#: js/signup.js.php:110 member/findPassword2.php:16 member/signupRun.php:41
+#: setupRun.php:34
+msgid "Please enter Email."
+msgstr "Please enter Email."
+
+#: adm/memberFormUpdate.php:38 ajax/memberEmail.php:10
+#: member/findPassword2.php:19 member/loginCheck.php:22
+#: member/passwordCheck.php:23 member/signupRun.php:44 setupRun.php:37
+msgid "Please enter the Email format to fit."
+msgstr "Please enter the Email format to fit."
+
+#: adm/memberFormUpdate.php:42 adm/memberFormUpdate.php:45 js/signup.js.php:117
+#: js/signup.js.php:130 member/signupRun.php:48 member/signupRun.php:55
+#, php-format
+msgid "Please enter your password at least %d character."
+msgid_plural "Please enter your password at least %d characters."
+msgstr[0] "Please enter your password at least %d character."
+msgstr[1] "Please enter your password at least %d characters."
+
+#: adm/memberFormUpdate.php:57 ajax/memberId.php:21 member/signupRun.php:66
+msgid "This ID is duplicated."
+msgstr "This ID is duplicated."
+
+#: adm/memberFormUpdate.php:68 ajax/memberEmail.php:21 member/signupRun.php:77
+msgid "This email is duplicated."
+msgstr "This email is duplicated."
+
+#: adm/memberFormUpdate.php:139
+msgid "Members of a higher level than you can not add."
+msgstr "Members of a higher level than you can not add."
+
+#: adm/pages.php:4 adm/pagesForm.php:7 adm/sidebarMenu.php:9
+msgid "Pages"
+msgstr "Pages"
+
+#: adm/pages.php:82 adm/pagesForm.php:114
+msgid "Page ID"
+msgstr "Page ID"
+
+#: adm/pages.php:83
+msgid "Page Subject"
+msgstr "Page Subject"
+
+#: adm/pages.php:84
+msgid "Page Content"
+msgstr "Page Content"
+
+#: adm/pages.php:97 adm/pagesForm.php:121
+msgid "Subject"
+msgstr "Subject"
+
+#: adm/pages.php:98
+msgid "Page Created"
+msgstr "Page Created"
+
+#: adm/pages.php:99
+msgid "View"
+msgstr "View"
+
+#: adm/pagesForm.php:59
+msgid "The page does not exist."
+msgstr "The page does not exist."
+
+#: adm/pagesForm.php:104
+msgid "Page Use"
+msgstr "Page Use"
+
+#: adm/pagesForm.php:128
+msgid "Header"
+msgstr "Header"
+
+#: adm/pagesForm.php:150
+msgid "Footer"
+msgstr "Footer"
+
+#: adm/pagesForm.php:166
+msgid "Tags"
+msgstr "Tags"
+
+#: adm/pagesForm.php:175
+msgid "Write"
+msgstr "Write"
+
+#: adm/pagesForm.php:337 adm/pagesFormUpdate.php:88
+msgid "Please enter a Page ID"
+msgstr "Please enter a Page ID"
+
+#: adm/pagesForm.php:342 adm/pagesFormUpdate.php:91
+msgid "Please enter a Subject"
+msgstr "Please enter a Subject"
+
+#: adm/pagesForm.php:347 adm/pagesFormUpdate.php:94
+msgid "Please enter a Contents"
+msgstr "Please enter a Contents"
+
+#: adm/pagesFormUpdate.php:21 adm/pagesFormUpdate.php:151
+msgid "Page does not exist"
+msgstr "Page does not exist"
+
+#: adm/pagesFormUpdate.php:101
+msgid "Please enter the header file correctly"
+msgstr "Please enter the header file correctly"
+
+#: adm/pagesFormUpdate.php:104 adm/pagesFormUpdate.php:112
+#, php-format
+msgid "File %s does not exist."
+msgstr "File %s does not exist."
+
+#: adm/pagesFormUpdate.php:109
+msgid "Please enter the footer file correctly"
+msgstr "Please enter the footer file correctly"
+
+#: adm/pagesFormUpdate.php:122 adm/pagesFormUpdate.php:159
+#, php-format
+msgid "%s is a duplicate page id"
+msgstr "%s is a duplicate page id"
+
+#: adm/sidebarMenu.php:10 adm/visiting.php:6
+msgid "Visiting"
+msgstr "Visiting"
+
+#: adm/sidebarMenu.php:14 adm/sitemap.php:4
+msgid "Sitemap"
+msgstr "Sitemap"
+
+#: adm/sitemap.php:14
+msgid "Create Sitemap"
+msgstr "Create Sitemap"
+
+#: adm/sitemap.php:15
+msgid "Recently created"
+msgstr "Recently created"
+
+#: adm/visiting.php:130 adm/visiting.php:153
+msgid "IP"
+msgstr "IP"
+
+#: adm/visiting.php:131 adm/visiting.php:154
+msgid "Referrer"
+msgstr "Referrer"
+
+#: adm/visiting.php:155
+msgid "OS"
+msgstr "OS"
+
+#: adm/visiting.php:156
+msgid "Device"
+msgstr "Device"
+
+#: adm/visiting.php:157
+msgid "Browser"
+msgstr "Browser"
+
+#: adm/visiting.php:158
+msgid "Visiting date"
+msgstr "Visiting date"
+
+#: board/board.inc.php:8
+msgid "The board does not exist."
+msgstr "The board does not exist."
+
+#: board/commentAction.php:12 board/commentAction.php:52
+#: board/commentUpdate.php:18 board/commentUpdate.php:91
+msgid "The comment does not exist."
+msgstr "The comment does not exist."
+
+#: board/commentAction.php:19 board/commentUpdate.php:181
+msgid ""
+"You can not edit comment made by members of a higher level than yourself."
+msgstr ""
+"You can not edit comment made by members of a higher level than yourself."
+
+#: board/commentAction.php:24 board/commentUpdate.php:186
+msgid "You can not edit it because it is not your own comment."
+msgstr "You can not edit it because it is not your own comment."
+
+#: board/commentAction.php:27 board/commentUpdate.php:189
+msgid "Please log in and edit your comment."
+msgstr "Please log in and edit your comment."
+
+#: board/commentAction.php:34 board/commentUpdate.php:104
+msgid "You do not have permission to reply comment."
+msgstr "You do not have permission to reply comment."
+
+#: board/commentAction.php:58 board/commentUpdate.php:24
+msgid ""
+"You can not delete comment made by members of a higher level than yourself."
+msgstr ""
+"You can not delete comment made by members of a higher level than yourself."
+
+#: board/commentAction.php:63 board/commentUpdate.php:29
+msgid "You can not delete it because it is not your own comment."
+msgstr "You can not delete it because it is not your own comment."
+
+#: board/commentAction.php:66 board/commentUpdate.php:32
+msgid "Please log in and delete your comment."
+msgstr "Please log in and delete your comment."
+
+#: board/commentUpdate.php:35 board/commentUpdate.php:118
+#: board/commentUpdate.php:192 board/passwordCheck.php:13
+#: board/writeUpdate.php:102 js/board.js.php:33 js/comment.js.php:40
+#: member/loginCheck.php:18 member/passwordCheck.php:19
+msgid "Please enter a Password."
+msgstr "Please enter a Password."
+
+#: board/commentUpdate.php:38
+msgid "Comments can not be deleted because the passwords do not match."
+msgstr "Comments can not be deleted because the passwords do not match."
+
+#: board/commentUpdate.php:52
+msgid "The comment was deleted."
+msgstr "The comment was deleted."
+
+#: board/commentUpdate.php:79 board/writeUpdate.php:18 js/board.js.php:50
+#: js/comment.js.php:52 js/findPassword.js.php:20 js/login.js.php:36
+#: js/signup.js.php:137 member/loginCheck.php:73 member/signupRun.php:81
+msgid "Please check the anti-spam code."
+msgstr "Please check the anti-spam code."
+
+#: board/commentUpdate.php:85 board/writeUpdate.php:34 js/board.js.php:44
+#: js/comment.js.php:46
+msgid "Please enter a Contents."
+msgstr "Please enter a Contents."
+
+#: board/commentUpdate.php:97 board/commentUpdate.php:100
+msgid "You do not have permission to write a comment."
+msgstr "You do not have permission to write a comment."
+
+#: board/commentUpdate.php:115 board/writeUpdate.php:99 js/board.js.php:24
+#: js/comment.js.php:31
+msgid "Please enter a Name."
+msgstr "Please enter a Name."
+
+#: board/commentUpdate.php:195
+msgid "Comments can not be edited because the passwords do not match."
+msgstr "Comments can not be edited because the passwords do not match."
+
+#: board/commentUpdate.php:206 board/writeUpdate.php:194
+msgid "There was an error processing your request. Please try again."
+msgstr "There was an error processing your request. Please try again."
+
+#: board/delete.php:10 board/write.php:20 board/write.php:74
+#: board/writeUpdate.php:45
+msgid "The post does not exist."
+msgstr "The post does not exist."
+
+#: board/delete.php:16
+msgid ""
+"You can not delete posts made by members of a higher level than yourself."
+msgstr ""
+"You can not delete posts made by members of a higher level than yourself."
+
+#: board/delete.php:20
+msgid "You can not delete it because it is not your own post."
+msgstr "You can not delete it because it is not your own post."
+
+#: board/delete.php:23
+msgid "Please log in and delete your post."
+msgstr "Please log in and delete your post."
+
+#: board/delete.php:92
+msgid "The post was deleted."
+msgstr "The post was deleted."
+
+#: board/download.php:18
+msgid "File information does not exist."
+msgstr "File information does not exist."
+
+#: board/download.php:21
+msgid "You do not have permission to download files."
+msgstr "You do not have permission to download files."
+
+#: board/download.php:25
+msgid "The file does not exist."
+msgstr "The file does not exist."
+
+#: board/list.php:7
+msgid "You do not have access to the board."
+msgstr "You do not have access to the board."
+
+#: board/password.php:10 board/passwordCheck.php:20 board/view.php:16
+msgid "No posts found."
+msgstr "No posts found."
+
+#: board/password.php:12
+msgid "Check post password"
+msgstr "Check post password"
+
+#: board/password.php:46 member/password.php:26
+msgid "Submit"
+msgstr "Submit"
+
+#: board/passwordCheck.php:25
+msgid "Passwords do not match."
+msgstr "Passwords do not match."
+
+#: board/view.php:9
+msgid "You do not have permission to view posts."
+msgstr "You do not have permission to view posts."
+
+#: board/view.php:24
+msgid "You can not read it because it is not your own post."
+msgstr "You can not read it because it is not your own post."
+
+#: board/view.php:27
+msgid "Please log in and read your post."
+msgstr "Please log in and read your post."
+
+#: board/write.php:23 board/write.php:83 board/writeUpdate.php:57
+#: board/writeUpdate.php:60
+msgid "You do not have permission to write a post."
+msgstr "You do not have permission to write a post."
+
+#: board/write.php:29 board/writeUpdate.php:167
+msgid "You can not edit posts made by members of a higher level than yourself."
+msgstr ""
+"You can not edit posts made by members of a higher level than yourself."
+
+#: board/write.php:33 board/writeUpdate.php:172
+msgid "You can not edit it because it is not your own post."
+msgstr "You can not edit it because it is not your own post."
+
+#: board/write.php:36 board/writeUpdate.php:175
+msgid "Please log in and edit your post."
+msgstr "Please log in and edit your post."
+
+#: board/write.php:77 board/writeUpdate.php:67
+msgid "You do not have permission to reply."
+msgstr "You do not have permission to reply."
+
+#: board/writeUpdate.php:31 js/board.js.php:39
+msgid "Please enter a Subject."
+msgstr "Please enter a Subject."
+
+#: board/writeUpdate.php:50
+msgid "You do not have permission to write a notice."
+msgstr "You do not have permission to write a notice."
+
+#: board/writeUpdate.php:64
+msgid "You can not reply to notice posts."
+msgstr "You can not reply to notice posts."
+
+#: board/writeUpdate.php:88
+msgid "Please select the category correctly."
+msgstr "Please select the category correctly."
+
+#: board/writeUpdate.php:270
+#, php-format
+msgid ""
+"\"%s\" can not be uploaded because it is larger than the value set on the "
+"server."
+msgstr ""
+"\"%s\" can not be uploaded because it is larger than the value set on the "
+"server."
+
+#: board/writeUpdate.php:273
+#, php-format
+msgid "\"%s\" was not successfully uploaded."
+msgstr "\"%s\" was not successfully uploaded."
+
+#: js/adm.js.php:54 js/adm.js.php:62
+msgid "Are you sure you want to delete?"
+msgstr "Are you sure you want to delete?"
+
+#: js/board.js.php:61
+msgid "Are you sure you want to delete this post?"
+msgstr "Are you sure you want to delete this post?"
+
+#: js/comment.js.php:58 js/comment.js.php:98
+msgid "Are you sure you want to delete the comment?"
+msgstr "Are you sure you want to delete the comment?"
+
+#: js/login.js.php:17 js/password.js.php:20 member/loginCheck.php:15
+#: member/passwordCheck.php:16
+msgid "Please enter your member ID or Email address."
+msgstr "Please enter your member ID or Email address."
+
+#: js/login.js.php:22 js/password.js.php:25
+msgid "Please enter Password."
+msgstr "Please enter Password."
+
+#: js/login.js.php:29
+msgid "Please enter the one time password."
+msgstr "Please enter the one time password."
+
+#: js/signup.js.php:10 member/signup.php:24
+msgid "Please accept the terms and conditions."
+msgstr "Please accept the terms and conditions."
+
+#: js/signup.js.php:15 member/signup.php:27
+msgid "Please accept the privacy policy."
+msgstr "Please accept the privacy policy."
+
+#: js/signup.js.php:123 member/signupRun.php:51
+msgid "The password you entered does not match."
+msgstr "The password you entered does not match."
+
+#: member/findPassword.php:9 member/findPassword.php:41 member/login.php:54
+msgid "Find Password"
+msgstr "Find Password"
+
+#: member/findPassword.php:27
+msgid "Enter your e-mail address and we will send you a new password."
+msgstr "Enter your e-mail address and we will send you a new password."
+
+#: member/findPassword2.php:48
+msgid "The new password you requested."
+msgstr "The new password you requested."
+
+#: member/findPassword2.php:52
+msgid "New password"
+msgstr "New password"
+
+#: member/findPassword2.php:54 member/login.php:7 member/login.php:48
+msgid "Log In"
+msgstr "Log In"
+
+#: member/findPassword2.php:67
+msgid "You have successfully sent a new password to the email you entered."
+msgstr "You have successfully sent a new password to the email you entered."
+
+#: member/findPassword2.php:69
+msgid "There was an error processing your request. please try again."
+msgstr "There was an error processing your request. please try again."
+
+#: member/login.php:28 member/login.php:29 member/password.php:20
+#: member/password.php:21
+msgid "ID or Email"
+msgstr "ID or Email"
+
+#: member/login.php:42 member/login.php:43
+msgid "One Time Password"
+msgstr "One Time Password"
+
+#: member/loginCheck.php:45 member/passwordCheck.php:46
+msgid "The member information does not match."
+msgstr "The member information does not match."
+
+#: member/loginCheck.php:48 member/memberLeave.php:23
+msgid "I am a member who has left."
+msgstr "I am a member who has left."
+
+#: member/loginCheck.php:51
+msgid "Member access is blocked."
+msgstr "Member access is blocked."
+
+#: member/loginCheck.php:66
+msgid "Please enter the one time password correctly."
+msgstr "Please enter the one time password correctly."
+
+#: member/memberLeave.php:8
+msgid "Administrators can not leave."
+msgstr "Administrators can not leave."
+
+#: member/password.php:7
+msgid "Password Confirm"
+msgstr "Password Confirm"
+
+#: member/password.php:36
+msgid "Confirm membership withdrawal"
+msgstr "Confirm membership withdrawal"
+
+#: member/password.php:46
+msgid "Are you sure you want to continue with membership withdrawal?"
+msgstr "Are you sure you want to continue with membership withdrawal?"
+
+#: member/password.php:50
+msgid "Cancel"
+msgstr "Cancel"
+
+#: member/password.php:51
+msgid "Confirm"
+msgstr "Confirm"
+
+#: member/signup.php:33
+msgid "My Account"
+msgstr "My Account"
+
+#: member/signup.php:89
+msgid "Re-enter password"
+msgstr "Re-enter password"
+
+#: member/signup.php:128
+msgid "Anti-spam code"
+msgstr "Anti-spam code"
+
+#: member/signup.php:156
+msgid "Your account has been created."
+msgstr "Your account has been created."
+
+#: member/signup.php:160
+msgid "Go Home"
+msgstr "Go Home"
+
+#: member/signupRun.php:107
+msgid "You can not sign up for an id or email duplication or other errors."
+msgstr "You can not sign up for an id or email duplication or other errors."
+
+#: member/terms.php:20
+msgid "Terms and conditions"
+msgstr "Terms and conditions"
+
+#: member/terms.php:24 member/terms.php:31
+msgid "I agree."
+msgstr "I agree."
+
+#: member/terms.php:27
+msgid "Privacy policy"
+msgstr "Privacy policy"
+
+#: setup.php:8 setupRun.php:14
+msgid "Setup can not be executed."
+msgstr "Setup can not be executed."
+
+#: setup.php:44
+#, php-format
+msgid "Do not have permission to write to the %s folder."
+msgstr "Do not have permission to write to the %s folder."
+
+#: setup.php:75
+msgid "Setup"
+msgstr "Setup"
+
+#: setupRun.php:40
+msgid "Please enter Password"
+msgstr "Please enter Password"
+
+#: setupRun.php:345
+msgid "Complete!"
+msgstr "Complete!"
+
+#: setupRun.php:346
+msgid "NT-Core Setup is done well"
+msgstr "NT-Core Setup is done well"
+
+#: src/lib/functions.php:182
+msgid "Y"
+msgstr "Y"
+
+#: src/lib/functions.php:182
+msgid "N"
+msgstr "N"
+
+#~ msgid "Visting"
+#~ msgstr "방문기록"
+
+#~ msgid "Please enter your email and password."
+#~ msgstr "Please enter your email and password."
+
+#~ msgid "Please check your email."
+#~ msgstr "Please check your email."
+
+#~ msgid "Close"
+#~ msgstr "Close"
+
+#~ msgid "Date"
+#~ msgstr "Date"
+
+#~ msgid "List Level"
+#~ msgstr "List Level"
+
+#~ msgid "View Level"
+#~ msgstr "View Level"
+
+#~ msgid "Reply Level"
+#~ msgstr "Reply Level"
+
+#~ msgid "Use Board"
+#~ msgstr "Use Board"
+
+#~ msgid "Korean"
+#~ msgstr "Korean"
+
+#~ msgid "English"
+#~ msgstr "English"
+
+#~ msgid "Create account"
+#~ msgstr "Create account"
+
+#~ msgid "Please enter your password at least %d characters."
+#~ msgstr "Please enter your password at least %d characters."

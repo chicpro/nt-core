@@ -1,0 +1,17 @@
+<?php
+/**
+ * Theme Configuration
+ */
+
+define('THEME_LOCALE_DOMAIN', 'simple');
+
+define('THEME_CSS_DIR',     'css');
+define('THEME_JS_DIR',      'js');
+define('THEME_IMG_DIR',     'img');
+define('THEME_LOCALE_DIR',  'locale');
+
+define('NT_THEME_CSS_URL', NT_THEME_URL.DIRECTORY_SEPARATOR.THEME_CSS_DIR);
+define('NT_THEME_JS_URL',  NT_THEME_URL.DIRECTORY_SEPARATOR.THEME_JS_DIR);
+define('NT_THEME_IMG_URL', NT_THEME_URL.DIRECTORY_SEPARATOR.THEME_IMG_DIR);
+
+define('NT_THEME_LOCALE_PATH', NT_THEME_PATH.DIRECTORY_SEPARATOR.THEME_LOCALE_DIR);

@@ -1,0 +1,43 @@
+.save-spinner {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+}
+.save-done {
+  color: #d94f00;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  font-size: 340%;
+  line-height: 1;
+  font-family: dashicons;
+  text-decoration: inherit;
+  font-weight: 400;
+  font-style: normal;
+  vertical-align: top;
+  text-align: center;
+  transition: color .1s ease-in 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.save-done:before {content: " \2713";}
+.display-none {display:none}
+
+.form-login {width: 100%;max-width: 330px;padding: 15px;margin: 0 auto;padding: 150px 0;}
+.form-login .form-control {position: relative;box-sizing: border-box;height: auto;padding: 10px;font-size: 16px;}
+.form-login .form-control:focus {z-index: 2;}
+.form-login input[type="email"] {margin-bottom: -1px;border-bottom-right-radius: 0;border-bottom-left-radius: 0;}
+
+.form-signup {padding: 70px 0;}
+
+.form-find {width: 100%;max-width: 430px;padding: 15px;margin: 0 auto;padding: 70px 0;}
+.form-find .form-control {position: relative;box-sizing: border-box;height: auto;padding: 10px;font-size: 16px;}
+.form-find .form-control:focus {z-index: 2;}
+.form-find input[type="email"] {margin-bottom: -1px;border-bottom-right-radius: 0;border-bottom-left-radius: 0;}
+
+.signup-success .icon {width:150px;height:150px;}
+.find-password .icon {width:150px;height:150px;}
+.leave-confirm .icon {width:150px;height:150px;}
+
+.post-password {padding: 150px 0;}
