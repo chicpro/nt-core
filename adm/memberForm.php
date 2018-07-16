@@ -40,7 +40,6 @@ $listHref = NT_ADMIN_URL.DIRECTORY_SEPARATOR.'member.php?'.http_build_query($qst
 ?>
 
 <div class="col my-4">
-    <h1 class="h2"><?php echo $html->title; ?></h1>
 
     <form name="fconfig" method="post" class="form-ajax" action="./memberFormUpdate.php" autocomplete="off">
         <input type="hidden" name="uid" value="<?php echo $mb_uid; ?>">
