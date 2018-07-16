@@ -5,9 +5,6 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <?php
 echo $html->getFavicon();
-
-if (trim(__c('cf_keywords')))
-    echo '<meta name="keywords" content="'.getHtmlChar(__c('cf_keywords')).'">'.PHP_EOL;
 ?>
 <title><?php echo $html->title; ?></title>
 <?php
