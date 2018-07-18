@@ -1,5 +1,7 @@
 @charset "utf-8";
 
+body > .container {padding: 56px 15px 0;}
+
 .board-list .icon {width: 14px;height: 14px;vertical-align: middle;}
 .board-list .icon-notice {width: 15px;height: 15px;vertical-align: middle;}
 .file-list .icon {width: 14px;height: 14px;vertical-align: middle;}

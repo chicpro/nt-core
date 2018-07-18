@@ -18,40 +18,39 @@ require_once(__DIR__.DIRECTORY_SEPARATOR.'header.sub.php');
 ?>
 
 <header>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container">
-            <div class="collapse navbar-collapse">
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="<?php echo NT_URL; ?>"><?php echo _d('Home', THEME_LOCALE_DOMAIN); ?></a>
-                    </li>
-                </ul>
-                <ul class="navbar-nav ml-auto">
-                    <?php if ($isAdmin) { ?>
-                    <li class="nav-item">
-                        <a class="nav-link" href="<?php echo NT_LINK_ADMIN; ?>"><?php echo _d('Admin', THEME_LOCALE_DOMAIN); ?></a>
-                    </li>
-                    <?php } ?>
-                    <li class="nav-item">
-                        <a class="nav-link" href="<?php echo NT_URL; ?>/<?php echo BOARD_DIR; ?>/free"><?php echo _d('Free Board', THEME_LOCALE_DOMAIN); ?></a>
-                    </li>
-                    <?php if ($isMember) { ?>
-                    <li class="nav-item">
-                        <a class="nav-link" href="<?php echo NT_LINK_ACCOUNT; ?>"><?php echo _d('My Account', THEME_LOCALE_DOMAIN); ?></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="<?php echo NT_LINK_LOGOUT; ?>"><?php echo _d('Log Out', THEME_LOCALE_DOMAIN); ?></a>
-                    </li>
-                    <?php } else { ?>
-                    <li class="nav-item">
-                        <a class="nav-link" href="<?php echo NT_LINK_LOGIN; ?>"><?php echo _d('Log In', THEME_LOCALE_DOMAIN); ?></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="<?php echo NT_LINK_SIGNUP; ?>"><?php echo _d('Sign Up', THEME_LOCALE_DOMAIN); ?></a>
-                    </li>
-                    <?php } ?>
-                </ul>
-            </div>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark">
+        <a class="navbar-brand" href="<?php echo NT_URL; ?>"><?php echo _d('Home', THEME_LOCALE_DOMAIN); ?></a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav ml-auto">
+                <?php if ($isAdmin) { ?>
+                <li class="nav-item">
+                    <a class="nav-link" href="<?php echo NT_LINK_ADMIN; ?>"><?php echo _d('Admin', THEME_LOCALE_DOMAIN); ?></a>
+                </li>
+                <?php } ?>
+                <li class="nav-item">
+                    <a class="nav-link" href="<?php echo NT_URL; ?>/<?php echo BOARD_DIR; ?>/free"><?php echo _d('Free Board', THEME_LOCALE_DOMAIN); ?></a>
+                </li>
+                <?php if ($isMember) { ?>
+                <li class="nav-item">
+                    <a class="nav-link" href="<?php echo NT_LINK_ACCOUNT; ?>"><?php echo _d('My Account', THEME_LOCALE_DOMAIN); ?></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="<?php echo NT_LINK_LOGOUT; ?>"><?php echo _d('Log Out', THEME_LOCALE_DOMAIN); ?></a>
+                </li>
+                <?php } else { ?>
+                <li class="nav-item">
+                    <a class="nav-link" href="<?php echo NT_LINK_LOGIN; ?>"><?php echo _d('Log In', THEME_LOCALE_DOMAIN); ?></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="<?php echo NT_LINK_SIGNUP; ?>"><?php echo _d('Sign Up', THEME_LOCALE_DOMAIN); ?></a>
+                </li>
+                <?php } ?>
+            </ul>
         </div>
     </nav>
 </header>
