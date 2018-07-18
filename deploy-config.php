@@ -23,8 +23,5 @@ define( 'GIT_COMMAND', 'sudo -u %s /usr/bin/git pull' );
 # Do we want to do IP verification?
 define( 'VERIFY_IP', false );
 
-# If defined, $_POST gets logged
-define( 'DUMP_POSTDATA', false );
-
 # Deplayment String
 define( 'DEPLOYMENT_STRING', '#\[deployment\]#i' );
