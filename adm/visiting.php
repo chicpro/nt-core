@@ -1,13 +1,10 @@
 <?php
 require_once './_common.php';
+require_once NT_PLUGIN_PATH.DIRECTORY_SEPARATOR.'daterangepicker'.DIRECTORY_SEPARATOR.'daterangepicker.php';
 
 use UAParser\Parser;
 
 $html->setPageTitle(_('Visiting'));
-
-$html->addStyleSheet('https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.8.0/css/bootstrap-datepicker.css', 'header', 10);
-$html->addJavaScript('https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.8.0/js/bootstrap-datepicker.min.js', 'footer', 10);
-$html->addJavaScript('https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.8.0/locales/bootstrap-datepicker.ko.min.js', 'footer', 10);
 
 require_once NT_ADMIN_PATH.DIRECTORY_SEPARATOR.'header.php';
 
@@ -196,19 +193,6 @@ $qstr = http_build_query($qstr, '', '&amp;');
         ?>
     </ul>
 </div>
-
-<script type="text/javascript">
-jQuery(function () {
-    jQuery(".calendar-button").on("click", function() {
-        jQuery(this).closest(".input-group").find("input").focus();
-    });
-
-    jQuery(".datepicker").datepicker({
-        format: "yyyy-mm-dd",
-        language: 'ko'
-    });
-});
-</script>
 
 <?php
 $urlPattern = $_SERVER['SCRIPT_NAME'].'?p=(:num)';
