@@ -508,12 +508,18 @@ function getPagesContent($id, bool $viewCount = true)
     if ($ogImage)
         $html->addOGTag('image', $ogImage);
 
+    if (trim($pages['pg_css'])) {
+        $html->addStyleString('<style type="text/css">
+        '.$pages['pg_css'].'
+        </style>', 'header', 10);
+    }
+
     if (is_file(NT_THEME_PATH.DIRECTORY_SEPARATOR.$header))
         $html->loadPage($header);
     else
         $html->loadPage('header.sub.php');
 
-    echo PHP_EOL.getContent($pages['pg_content']).PHP_EOL;
+    echo PHP_EOL.$pages['pg_content'].PHP_EOL;
 
     if (is_file(NT_THEME_PATH.DIRECTORY_SEPARATOR.$footer))
         $html->loadPage($footer);

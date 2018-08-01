@@ -80,6 +80,7 @@ if (isset($_REQUEST['p']))
 $pg_id      = trim(strip_tags($_REQUEST['pg_id']));
 $pg_subject = trim(strip_tags($_REQUEST['pg_subject']));
 $pg_content = trim($_REQUEST['pg_content']);
+$pg_css     = trim($_REQUEST['pg_css']);
 $pg_header  = trim($_REQUEST['pg_header']);
 $pg_footer  = trim($_REQUEST['pg_footer']);
 $pg_use     = (int)preg_replace('#[^0-9]#', '', $_REQUEST['pg_use']);
@@ -116,12 +117,12 @@ if ($w == '') {
     $sql = " select count(*) as cnt from `{$nt['pages_table']}` where pg_id = :pg_id ";
     $DB->prepare($sql);
     $DB->execute([':pg_id' => $pg_id]);
-    $cnt = $DB->fetchColimn();
+    $cnt = $DB->fetchColumn();
 
     if ($cnt > 0)
         dieJson(sprintf(_('%s is a duplicate page id'), $pg_id));
 
-    $sql = " insert into `{$nt['pages_table']}` ( pg_id, pg_subject, pg_content, pg_header, pg_footer, pg_use, pg_views, pg_date, pg_ip ) values ( :pg_id, :pg_subject, :pg_content, :pg_header, :pg_footer, :pg_use, :pg_views, :pg_date, :pg_ip ) ";
+    $sql = " insert into `{$nt['pages_table']}` ( pg_id, pg_subject, pg_content, pg_css, pg_header, pg_footer, pg_use, pg_views, pg_date, pg_ip ) values ( :pg_id, :pg_subject, :pg_content, :pg_css, :pg_header, :pg_footer, :pg_use, :pg_views, :pg_date, :pg_ip ) ";
 
     $DB->prepare($sql);
     $DB->bindValueArray(
@@ -129,6 +130,7 @@ if ($w == '') {
             ':pg_id'      => $pg_id,
             ':pg_subject' => $pg_subject,
             ':pg_content' => $pg_content,
+            ':pg_css'     => $pg_css,
             ':pg_header'  => $pg_header,
             ':pg_footer'  => $pg_footer,
             ':pg_use'     => $pg_use,
@@ -153,12 +155,12 @@ if ($w == '') {
     $sql = " select count(*) as cnt from `{$nt['pages_table']}` where pg_id = :pg_id and pg_no <> :pg_no ";
     $DB->prepare($sql);
     $DB->execute([':pg_id' => $pg_id, ':pg_no' => $no]);
-    $cnt = $DB->fetchColimn();
+    $cnt = $DB->fetchColumn();
 
     if ($cnt > 0)
         dieJson(sprintf(_('%s is a duplicate page id'), $pg_id));
 
-    $sql = " update `{$nt['pages_table']}` set pg_id = :pg_id, pg_subject = :pg_subject, pg_content = :pg_content, pg_header = :pg_header, pg_footer = :pg_footer, pg_use = :pg_use where pg_no = :pg_no ";
+    $sql = " update `{$nt['pages_table']}` set pg_id = :pg_id, pg_subject = :pg_subject, pg_content = :pg_content, pg_css = :pg_css, pg_header = :pg_header, pg_footer = :pg_footer, pg_use = :pg_use where pg_no = :pg_no ";
 
     $DB->prepare($sql);
     $DB->bindValueArray(
@@ -166,6 +168,7 @@ if ($w == '') {
             ':pg_id'      => $pg_id,
             ':pg_subject' => $pg_subject,
             ':pg_content' => $pg_content,
+            ':pg_css'     => $pg_css,
             ':pg_header'  => $pg_header,
             ':pg_footer'  => $pg_footer,
             ':pg_use'     => $pg_use,

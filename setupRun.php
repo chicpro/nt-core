@@ -291,6 +291,7 @@ $sql = " CREATE TABLE `{$nt['pages_table']}` (
     `pg_id` varchar(150) COLLATE utf8mb4_unicode_ci NOT NULL,
     `pg_subject` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
     `pg_content` text COLLATE utf8mb4_unicode_ci NOT NULL,
+    `pg_css` text COLLATE utf8mb4_unicode_ci DEFAULT NULL,
     `pg_header` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
     `pg_footer` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
     `pg_use` tinyint(4) DEFAULT NULL,
