@@ -539,6 +539,11 @@ function getPagesContent($id, bool $viewCount = true)
     return array('content' => $content, 'code' => '');
 }
 
+function removeScriptString(string $string)
+{
+    return preg_replace('#<script\\b[^>]*>(.*?)<\\/script>#is', '', $string);
+}
+
 // gettext ngettext function
 function _n(string $msgid1 , string $msgid2 , int $n)
 {

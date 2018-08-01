@@ -54,7 +54,7 @@ class HTML
     {
         if ($name) {
             $name    = strip_tags($name);
-            $content = strip_tags($content);
+            $content = strip_tags(removeScriptString($content));
 
             switch ($name) {
                 case 'description':
@@ -71,7 +71,7 @@ class HTML
     {
         if ($property) {
             $property = strip_tags($property);
-            $content  = strip_tags($content);
+            $content  = strip_tags(removeScriptString($content));
 
             switch ($property) {
                 case 'description':
