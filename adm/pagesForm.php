@@ -562,37 +562,6 @@ var editor = grapesjs.init({
     storageManager: { autoload: 0 }
 });
 
-var pnm = editor.Panels;
-
-pnm.addButton('options', [
-    {
-        id: 'undo',
-        className: 'fa fa-undo',
-        attributes: {title: 'Undo'},
-        command: function(){ editor.runCommand('core:undo') }
-    },{
-        id: 'redo',
-        className: 'fa fa-repeat',
-        attributes: {title: 'Redo'},
-        command: function(){ editor.runCommand('core:redo') }
-    },{
-        id: 'clear-all',
-        className: 'fa fa-trash icon-blank',
-        attributes: {title: 'Clear canvas'},
-        command: {
-            run: function(editor, sender) {
-            sender && sender.set('active', false);
-            if(confirm('Are you sure to clean the canvas?')){
-                editor.DomComponents.clear();
-                setTimeout(function(){
-                localStorage.clear()
-                },0)
-            }
-            }
-        }
-    }
-]);
-
 jQuery(function() {
     jQuery(document).on("change", "#pg_id", function(e) {
         var id = jQuery(this).val();
