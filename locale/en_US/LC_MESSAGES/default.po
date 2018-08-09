@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"POT-Creation-Date: 2018-07-06 11:12+0900\n"
-"PO-Revision-Date: 2018-07-06 11:12+0900\n"
+"POT-Creation-Date: 2018-08-09 10:36+0900\n"
+"PO-Revision-Date: 2018-08-09 10:36+0900\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: en_US\n"
@@ -19,6 +19,7 @@ msgstr ""
 "X-Poedit-SearchPathExcluded-1: theme\n"
 "X-Poedit-SearchPathExcluded-2: vendor\n"
 "X-Poedit-SearchPathExcluded-3: js/tinymce\n"
+"X-Poedit-SearchPathExcluded-4: js/grapesjs\n"
 
 #: adm/_common.php:6
 msgid "Only the administrator can access it."
@@ -28,7 +29,7 @@ msgstr "Only the administrator can access it."
 msgid "Board"
 msgstr "Board"
 
-#: adm/board.php:68 adm/member.php:72 adm/pages.php:70 adm/visiting.php:147
+#: adm/board.php:68 adm/member.php:72 adm/pages.php:70 adm/visiting.php:144
 msgid "Total"
 msgstr "Total"
 
@@ -44,11 +45,11 @@ msgstr "Board ID"
 msgid "Board Title"
 msgstr "Board Title"
 
-#: adm/board.php:86 adm/member.php:92 adm/pages.php:89 adm/visiting.php:140
+#: adm/board.php:86 adm/member.php:92 adm/pages.php:89 adm/visiting.php:137
 msgid "Search"
 msgstr "Search"
 
-#: adm/board.php:93 adm/member.php:84 adm/member.php:100 adm/memberForm.php:50
+#: adm/board.php:93 adm/member.php:84 adm/member.php:100 adm/memberForm.php:49
 #: adm/pages.php:96 member/signup.php:60 setup.php:49
 msgid "ID"
 msgstr "ID"
@@ -81,7 +82,7 @@ msgstr "Use"
 msgid "Edit"
 msgstr "Edit"
 
-#: adm/board.php:142 adm/member.php:132 adm/pages.php:123 adm/visiting.php:195
+#: adm/board.php:142 adm/member.php:132 adm/pages.php:123 adm/visiting.php:192
 msgid "No data available."
 msgstr "No data available."
 
@@ -89,7 +90,7 @@ msgstr "No data available."
 msgid "Board information does not exist."
 msgstr "Board information does not exist."
 
-#: adm/boardForm.php:40 adm/memberForm.php:54 setup.php:52
+#: adm/boardForm.php:40 adm/memberForm.php:53 setup.php:52
 msgid "Only alphabetic, numeric, and _ can be used"
 msgstr "Only alphabetic, numeric, and _ can be used"
 
@@ -102,14 +103,14 @@ msgid "Use board"
 msgstr "Use board"
 
 #: adm/boardForm.php:56 adm/boardForm.php:189 adm/boardForm.php:199
-#: adm/config.php:181 adm/memberForm.php:111 adm/pagesForm.php:107
+#: adm/config.php:181 adm/memberForm.php:110 adm/pagesForm.php:111
 #: member/signup.php:103
 msgid "Used"
 msgstr "Used"
 
 #: adm/boardForm.php:57 adm/boardForm.php:190 adm/boardForm.php:200
-#: adm/config.php:182 adm/memberForm.php:112 adm/pagesForm.php:108
-#: adm/pagesForm.php:138 adm/pagesForm.php:160 member/signup.php:104
+#: adm/config.php:182 adm/memberForm.php:111 adm/pagesForm.php:112
+#: adm/pagesForm.php:142 adm/pagesForm.php:174 member/signup.php:104
 msgid "Not used"
 msgstr "Not used"
 
@@ -169,11 +170,11 @@ msgstr "Use Captcha"
 msgid "Use Comment Captcha"
 msgstr "Use Comment Captcha"
 
-#: adm/boardForm.php:208 adm/config.php:229 adm/memberForm.php:167
+#: adm/boardForm.php:208 adm/config.php:229 adm/memberForm.php:166
 msgid "Save"
 msgstr "Save"
 
-#: adm/boardForm.php:209 adm/memberForm.php:168 adm/pagesForm.php:176
+#: adm/boardForm.php:209 adm/memberForm.php:167 adm/pagesForm.php:190
 msgid "List"
 msgstr "List"
 
@@ -210,7 +211,7 @@ msgstr ""
 msgid "Only super administrators can access."
 msgstr "Only super administrators can access."
 
-#: adm/config.php:7 adm/sidebarMenu.php:15
+#: adm/config.php:7 adm/sidebarMenu.php:16
 msgid "Configuration"
 msgstr "Configuration"
 
@@ -282,7 +283,7 @@ msgstr "Token valid seconds"
 msgid "Minimum password length"
 msgstr "Minimum password length"
 
-#: adm/config.php:178 adm/memberForm.php:108 member/signup.php:100
+#: adm/config.php:178 adm/memberForm.php:107 member/signup.php:100
 msgid "Google 2-factor authentication"
 msgstr "Google 2-factor authentication"
 
@@ -314,12 +315,12 @@ msgstr "Favicon"
 msgid "Favicon delete"
 msgstr "Favicon delete"
 
-#: adm/configUpdate.php:69 adm/pagesFormUpdate.php:47
-#: adm/pagesFormUpdate.php:264
+#: adm/configUpdate.php:69 adm/menuUpdate.php:12 adm/pagesFormUpdate.php:47
+#: adm/pagesFormUpdate.php:267
 msgid "An error occurred while editing the information. Please try again."
 msgstr "An error occurred while editing the information. Please try again."
 
-#: adm/header.php:11 setupRun.php:347
+#: adm/header.php:11 setupRun.php:364
 msgid "Home"
 msgstr "Home"
 
@@ -343,33 +344,33 @@ msgstr "Visiting Status"
 msgid "Visits"
 msgstr "Visits"
 
-#: adm/member.php:4 adm/memberForm.php:4 adm/memberForm.php:98
+#: adm/member.php:4 adm/memberForm.php:4 adm/memberForm.php:97
 #: adm/sidebarMenu.php:4 adm/sidebarMenu.php:6
 msgid "Member"
 msgstr "Member"
 
-#: adm/member.php:85 adm/member.php:102 adm/memberForm.php:65
+#: adm/member.php:85 adm/member.php:102 adm/memberForm.php:64
 #: member/findPassword.php:30 member/signup.php:74 setup.php:62
 msgid "Email"
 msgstr "Email"
 
-#: adm/member.php:86 adm/member.php:103 adm/memberForm.php:79
+#: adm/member.php:86 adm/member.php:103 adm/memberForm.php:78
 msgid "Level"
 msgstr "Level"
 
-#: adm/member.php:87 adm/member.php:99 adm/visiting.php:152
+#: adm/member.php:87 adm/member.php:99 adm/visiting.php:149
 msgid "Number"
 msgstr "Number"
 
-#: adm/member.php:101 adm/memberForm.php:58 member/signup.php:67 setup.php:56
+#: adm/member.php:101 adm/memberForm.php:57 member/signup.php:67 setup.php:56
 msgid "Name"
 msgstr "Name"
 
-#: adm/member.php:104 adm/memberForm.php:143
+#: adm/member.php:104 adm/memberForm.php:142
 msgid "Leave"
 msgstr "Leave"
 
-#: adm/member.php:105 adm/memberForm.php:152
+#: adm/member.php:105 adm/memberForm.php:151
 msgid "Block"
 msgstr "Block"
 
@@ -388,66 +389,66 @@ msgstr "Member information does not exist."
 msgid "Members of a higher level than you can not modify."
 msgstr "Members of a higher level than you can not modify."
 
-#: adm/memberForm.php:72 board/password.php:42 board/password.php:43
+#: adm/memberForm.php:71 board/password.php:42 board/password.php:43
 #: member/login.php:30 member/login.php:31 member/password.php:22
 #: member/password.php:23 member/signup.php:81 setup.php:68
 msgid "Password"
 msgstr "Password"
 
-#: adm/memberForm.php:95
+#: adm/memberForm.php:94
 msgid "Member Tyep"
 msgstr "Member Tyep"
 
-#: adm/memberForm.php:99
+#: adm/memberForm.php:98
 msgid "Manager"
 msgstr "Manager"
 
-#: adm/memberForm.php:101
+#: adm/memberForm.php:100
 msgid "Administrator"
 msgstr "Administrator"
 
-#: adm/memberForm.php:133
+#: adm/memberForm.php:132
 msgid "Memo"
 msgstr "Memo"
 
-#: adm/memberForm.php:140
+#: adm/memberForm.php:139
 msgid "Member withdrawal date"
 msgstr "Member withdrawal date"
 
-#: adm/memberForm.php:149
+#: adm/memberForm.php:148
 msgid "Member blocking date"
 msgstr "Member blocking date"
 
-#: adm/memberForm.php:159 member/login.php:52 member/signup.php:35
+#: adm/memberForm.php:158 member/login.php:52 member/signup.php:35
 #: member/signup.php:47 member/signup.php:146 member/terms.php:7
 #: member/terms.php:35
 msgid "Sign Up"
 msgstr "Sign Up"
 
 #: adm/memberFormUpdate.php:25 ajax/memberId.php:7 js/signup.js.php:100
-#: member/signupRun.php:31 setupRun.php:25
+#: member/signupRun.php:31 setupRun.php:26
 msgid "Please enter ID."
 msgstr "Please enter ID."
 
 #: adm/memberFormUpdate.php:28 ajax/memberId.php:10 member/loginCheck.php:28
-#: member/passwordCheck.php:29 member/signupRun.php:34 setupRun.php:28
+#: member/passwordCheck.php:29 member/signupRun.php:34 setupRun.php:29
 msgid "Please enter the ID format to fit."
 msgstr "Please enter the ID format to fit."
 
 #: adm/memberFormUpdate.php:32 js/signup.js.php:105 member/signupRun.php:38
-#: setupRun.php:31
+#: setupRun.php:32
 msgid "Please enter Name."
 msgstr "Please enter Name."
 
 #: adm/memberFormUpdate.php:35 ajax/memberEmail.php:7 js/findPassword.js.php:14
 #: js/signup.js.php:110 member/findPassword2.php:16 member/signupRun.php:41
-#: setupRun.php:34
+#: setupRun.php:35
 msgid "Please enter Email."
 msgstr "Please enter Email."
 
 #: adm/memberFormUpdate.php:38 ajax/memberEmail.php:10
 #: member/findPassword2.php:19 member/loginCheck.php:22
-#: member/passwordCheck.php:23 member/signupRun.php:44 setupRun.php:37
+#: member/passwordCheck.php:23 member/signupRun.php:44 setupRun.php:38
 msgid "Please enter the Email format to fit."
 msgstr "Please enter the Email format to fit."
 
@@ -471,11 +472,15 @@ msgstr "This email is duplicated."
 msgid "Members of a higher level than you can not add."
 msgstr "Members of a higher level than you can not add."
 
+#: adm/menu.php:5 adm/menu.php:12 adm/sidebarMenu.php:14
+msgid "Menu"
+msgstr "Menu"
+
 #: adm/pages.php:4 adm/pagesForm.php:7 adm/sidebarMenu.php:9
 msgid "Pages"
 msgstr "Pages"
 
-#: adm/pages.php:82 adm/pagesForm.php:114
+#: adm/pages.php:82 adm/pagesForm.php:118
 msgid "Page ID"
 msgstr "Page ID"
 
@@ -487,7 +492,7 @@ msgstr "Page Subject"
 msgid "Page Content"
 msgstr "Page Content"
 
-#: adm/pages.php:97 adm/pagesForm.php:121
+#: adm/pages.php:97 adm/pagesForm.php:125
 msgid "Subject"
 msgstr "Subject"
 
@@ -499,69 +504,69 @@ msgstr "Page Created"
 msgid "View"
 msgstr "View"
 
-#: adm/pagesForm.php:59
+#: adm/pagesForm.php:63
 msgid "The page does not exist."
 msgstr "The page does not exist."
 
-#: adm/pagesForm.php:104
+#: adm/pagesForm.php:108
 msgid "Page Use"
 msgstr "Page Use"
 
-#: adm/pagesForm.php:128
+#: adm/pagesForm.php:132
 msgid "Header"
 msgstr "Header"
 
-#: adm/pagesForm.php:150
+#: adm/pagesForm.php:164
 msgid "Footer"
 msgstr "Footer"
 
-#: adm/pagesForm.php:166
+#: adm/pagesForm.php:180
 msgid "Tags"
 msgstr "Tags"
 
-#: adm/pagesForm.php:175
+#: adm/pagesForm.php:189
 msgid "Write"
 msgstr "Write"
 
-#: adm/pagesForm.php:337 adm/pagesFormUpdate.php:88
+#: adm/pagesForm.php:599 adm/pagesFormUpdate.php:89
 msgid "Please enter a Page ID"
 msgstr "Please enter a Page ID"
 
-#: adm/pagesForm.php:342 adm/pagesFormUpdate.php:91
+#: adm/pagesForm.php:604 adm/pagesFormUpdate.php:92
 msgid "Please enter a Subject"
 msgstr "Please enter a Subject"
 
-#: adm/pagesForm.php:347 adm/pagesFormUpdate.php:94
+#: adm/pagesForm.php:609 adm/pagesFormUpdate.php:95
 msgid "Please enter a Contents"
 msgstr "Please enter a Contents"
 
-#: adm/pagesFormUpdate.php:21 adm/pagesFormUpdate.php:151
+#: adm/pagesFormUpdate.php:21 adm/pagesFormUpdate.php:153
 msgid "Page does not exist"
 msgstr "Page does not exist"
 
-#: adm/pagesFormUpdate.php:101
+#: adm/pagesFormUpdate.php:102
 msgid "Please enter the header file correctly"
 msgstr "Please enter the header file correctly"
 
-#: adm/pagesFormUpdate.php:104 adm/pagesFormUpdate.php:112
+#: adm/pagesFormUpdate.php:105 adm/pagesFormUpdate.php:113
 #, php-format
 msgid "File %s does not exist."
 msgstr "File %s does not exist."
 
-#: adm/pagesFormUpdate.php:109
+#: adm/pagesFormUpdate.php:110
 msgid "Please enter the footer file correctly"
 msgstr "Please enter the footer file correctly"
 
-#: adm/pagesFormUpdate.php:122 adm/pagesFormUpdate.php:159
+#: adm/pagesFormUpdate.php:123 adm/pagesFormUpdate.php:161
 #, php-format
 msgid "%s is a duplicate page id"
 msgstr "%s is a duplicate page id"
 
-#: adm/sidebarMenu.php:10 adm/visiting.php:6
+#: adm/sidebarMenu.php:10 adm/visiting.php:7
 msgid "Visiting"
 msgstr "Visiting"
 
-#: adm/sidebarMenu.php:14 adm/sitemap.php:4
+#: adm/sidebarMenu.php:15 adm/sitemap.php:4
 msgid "Sitemap"
 msgstr "Sitemap"
 
@@ -573,27 +578,27 @@ msgstr "Create Sitemap"
 msgid "Recently created"
 msgstr "Recently created"
 
-#: adm/visiting.php:130 adm/visiting.php:153
+#: adm/visiting.php:127 adm/visiting.php:150
 msgid "IP"
 msgstr "IP"
 
-#: adm/visiting.php:131 adm/visiting.php:154
+#: adm/visiting.php:128 adm/visiting.php:151
 msgid "Referrer"
 msgstr "Referrer"
 
-#: adm/visiting.php:155
+#: adm/visiting.php:152
 msgid "OS"
 msgstr "OS"
 
-#: adm/visiting.php:156
+#: adm/visiting.php:153
 msgid "Device"
 msgstr "Device"
 
-#: adm/visiting.php:157
+#: adm/visiting.php:154
 msgid "Browser"
 msgstr "Browser"
 
-#: adm/visiting.php:158
+#: adm/visiting.php:155
 msgid "Visiting date"
 msgstr "Visiting date"
 
@@ -950,7 +955,7 @@ msgstr "I agree."
 msgid "Privacy policy"
 msgstr "Privacy policy"
 
-#: setup.php:8 setupRun.php:14
+#: setup.php:8 setupRun.php:15
 msgid "Setup can not be executed."
 msgstr "Setup can not be executed."
 
@@ -963,15 +968,15 @@ msgstr "Do not have permission to write to the %s folder."
 msgid "Setup"
 msgstr "Setup"
 
-#: setupRun.php:40
+#: setupRun.php:41
 msgid "Please enter Password"
 msgstr "Please enter Password"
 
-#: setupRun.php:345
+#: setupRun.php:362
 msgid "Complete!"
 msgstr "Complete!"
 
-#: setupRun.php:346
+#: setupRun.php:363
 msgid "NT-Core Setup is done well"
 msgstr "NT-Core Setup is done well"
 
@@ -982,6 +987,11 @@ msgstr "Y"
 #: src/lib/functions.php:182
 msgid "N"
 msgstr "N"
+
+#, fuzzy
+#~| msgid "Sitemap"
+#~ msgid "map"
+#~ msgstr "Sitemap"
 
 #~ msgid "Visting"
 #~ msgstr "방문기록"

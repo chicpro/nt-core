@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"POT-Creation-Date: 2018-07-06 11:12+0900\n"
-"PO-Revision-Date: 2018-07-06 11:13+0900\n"
+"POT-Creation-Date: 2018-08-09 10:37+0900\n"
+"PO-Revision-Date: 2018-08-09 10:37+0900\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: ko_KR\n"
@@ -19,6 +19,7 @@ msgstr ""
 "X-Poedit-SearchPathExcluded-1: theme\n"
 "X-Poedit-SearchPathExcluded-2: vendor\n"
 "X-Poedit-SearchPathExcluded-3: js/tinymce\n"
+"X-Poedit-SearchPathExcluded-4: js/grapesjs\n"
 
 #: adm/_common.php:6
 msgid "Only the administrator can access it."
@@ -28,7 +29,7 @@ msgstr "관리자만 접근할 수 있습니다."
 msgid "Board"
 msgstr "게시판"
 
-#: adm/board.php:68 adm/member.php:72 adm/pages.php:70 adm/visiting.php:147
+#: adm/board.php:68 adm/member.php:72 adm/pages.php:70 adm/visiting.php:144
 msgid "Total"
 msgstr "전체"
 
@@ -44,11 +45,11 @@ msgstr "게시판 아이디"
 msgid "Board Title"
 msgstr "게시판 제목"
 
-#: adm/board.php:86 adm/member.php:92 adm/pages.php:89 adm/visiting.php:140
+#: adm/board.php:86 adm/member.php:92 adm/pages.php:89 adm/visiting.php:137
 msgid "Search"
 msgstr "Search"
 
-#: adm/board.php:93 adm/member.php:84 adm/member.php:100 adm/memberForm.php:50
+#: adm/board.php:93 adm/member.php:84 adm/member.php:100 adm/memberForm.php:49
 #: adm/pages.php:96 member/signup.php:60 setup.php:49
 msgid "ID"
 msgstr "아이디"
@@ -81,7 +82,7 @@ msgstr "사용함"
 msgid "Edit"
 msgstr "수정"
 
-#: adm/board.php:142 adm/member.php:132 adm/pages.php:123 adm/visiting.php:195
+#: adm/board.php:142 adm/member.php:132 adm/pages.php:123 adm/visiting.php:192
 msgid "No data available."
 msgstr "자료가 없습니다."
 
@@ -89,7 +90,7 @@ msgstr "자료가 없습니다."
 msgid "Board information does not exist."
 msgstr "게시판 정보가 존재하지 않습니다."
 
-#: adm/boardForm.php:40 adm/memberForm.php:54 setup.php:52
+#: adm/boardForm.php:40 adm/memberForm.php:53 setup.php:52
 msgid "Only alphabetic, numeric, and _ can be used"
 msgstr "영문자, 숫자, _ 만 사용 가능"
 
@@ -102,14 +103,14 @@ msgid "Use board"
 msgstr "게시판 사용"
 
 #: adm/boardForm.php:56 adm/boardForm.php:189 adm/boardForm.php:199
-#: adm/config.php:181 adm/memberForm.php:111 adm/pagesForm.php:107
+#: adm/config.php:181 adm/memberForm.php:110 adm/pagesForm.php:111
 #: member/signup.php:103
 msgid "Used"
 msgstr "사용함"
 
 #: adm/boardForm.php:57 adm/boardForm.php:190 adm/boardForm.php:200
-#: adm/config.php:182 adm/memberForm.php:112 adm/pagesForm.php:108
-#: adm/pagesForm.php:138 adm/pagesForm.php:160 member/signup.php:104
+#: adm/config.php:182 adm/memberForm.php:111 adm/pagesForm.php:112
+#: adm/pagesForm.php:142 adm/pagesForm.php:174 member/signup.php:104
 msgid "Not used"
 msgstr "사용안함"
 
@@ -169,11 +170,11 @@ msgstr "캡챠사용"
 msgid "Use Comment Captcha"
 msgstr "댓글 캡챠사용"
 
-#: adm/boardForm.php:208 adm/config.php:229 adm/memberForm.php:167
+#: adm/boardForm.php:208 adm/config.php:229 adm/memberForm.php:166
 msgid "Save"
 msgstr "Save"
 
-#: adm/boardForm.php:209 adm/memberForm.php:168 adm/pagesForm.php:176
+#: adm/boardForm.php:209 adm/memberForm.php:167 adm/pagesForm.php:190
 msgid "List"
 msgstr "목록"
 
@@ -209,7 +210,7 @@ msgstr "정보 추가 또는 수정 중 오류가 발생했습니다. 다시 시
 msgid "Only super administrators can access."
 msgstr "최고관리자만 접근할 수 있습니다."
 
-#: adm/config.php:7 adm/sidebarMenu.php:15
+#: adm/config.php:7 adm/sidebarMenu.php:16
 msgid "Configuration"
 msgstr "환경설정"
 
@@ -281,7 +282,7 @@ msgstr "토큰 유효시간(초)"
 msgid "Minimum password length"
 msgstr "비밀번호 최소글자수"
 
-#: adm/config.php:178 adm/memberForm.php:108 member/signup.php:100
+#: adm/config.php:178 adm/memberForm.php:107 member/signup.php:100
 msgid "Google 2-factor authentication"
 msgstr "구글 2단계인증"
 
@@ -311,12 +312,12 @@ msgstr "파비콘"
 msgid "Favicon delete"
 msgstr "파비콘 삭제"
 
-#: adm/configUpdate.php:69 adm/pagesFormUpdate.php:47
-#: adm/pagesFormUpdate.php:264
+#: adm/configUpdate.php:69 adm/menuUpdate.php:12 adm/pagesFormUpdate.php:47
+#: adm/pagesFormUpdate.php:267
 msgid "An error occurred while editing the information. Please try again."
 msgstr "정보 수정 중 오류가 발생했습니다. 다시 시도해 주십시오."
 
-#: adm/header.php:11 setupRun.php:347
+#: adm/header.php:11 setupRun.php:364
 msgid "Home"
 msgstr "홈"
 
@@ -340,33 +341,33 @@ msgstr "방문 현황"
 msgid "Visits"
 msgstr "방문자"
 
-#: adm/member.php:4 adm/memberForm.php:4 adm/memberForm.php:98
+#: adm/member.php:4 adm/memberForm.php:4 adm/memberForm.php:97
 #: adm/sidebarMenu.php:4 adm/sidebarMenu.php:6
 msgid "Member"
 msgstr "회원"
 
-#: adm/member.php:85 adm/member.php:102 adm/memberForm.php:65
+#: adm/member.php:85 adm/member.php:102 adm/memberForm.php:64
 #: member/findPassword.php:30 member/signup.php:74 setup.php:62
 msgid "Email"
 msgstr "이메일"
 
-#: adm/member.php:86 adm/member.php:103 adm/memberForm.php:79
+#: adm/member.php:86 adm/member.php:103 adm/memberForm.php:78
 msgid "Level"
 msgstr "레벨"
 
-#: adm/member.php:87 adm/member.php:99 adm/visiting.php:152
+#: adm/member.php:87 adm/member.php:99 adm/visiting.php:149
 msgid "Number"
 msgstr "번호"
 
-#: adm/member.php:101 adm/memberForm.php:58 member/signup.php:67 setup.php:56
+#: adm/member.php:101 adm/memberForm.php:57 member/signup.php:67 setup.php:56
 msgid "Name"
 msgstr "이름"
 
-#: adm/member.php:104 adm/memberForm.php:143
+#: adm/member.php:104 adm/memberForm.php:142
 msgid "Leave"
 msgstr "탈퇴"
 
-#: adm/member.php:105 adm/memberForm.php:152
+#: adm/member.php:105 adm/memberForm.php:151
 msgid "Block"
 msgstr "차단"
 
@@ -385,66 +386,66 @@ msgstr "회원정보가 존재하지 않습니다."
 msgid "Members of a higher level than you can not modify."
 msgstr "자신보다 높은 레벨의 회원은 수정할 수 없습니다."
 
-#: adm/memberForm.php:72 board/password.php:42 board/password.php:43
+#: adm/memberForm.php:71 board/password.php:42 board/password.php:43
 #: member/login.php:30 member/login.php:31 member/password.php:22
 #: member/password.php:23 member/signup.php:81 setup.php:68
 msgid "Password"
 msgstr "비밀번호"
 
-#: adm/memberForm.php:95
+#: adm/memberForm.php:94
 msgid "Member Tyep"
 msgstr "회원타입"
 
-#: adm/memberForm.php:99
+#: adm/memberForm.php:98
 msgid "Manager"
 msgstr "관리자"
 
-#: adm/memberForm.php:101
+#: adm/memberForm.php:100
 msgid "Administrator"
 msgstr "최고관리자"
 
-#: adm/memberForm.php:133
+#: adm/memberForm.php:132
 msgid "Memo"
 msgstr "메모"
 
-#: adm/memberForm.php:140
+#: adm/memberForm.php:139
 msgid "Member withdrawal date"
 msgstr "회원탈퇴일"
 
-#: adm/memberForm.php:149
+#: adm/memberForm.php:148
 msgid "Member blocking date"
 msgstr "회원차단일"
 
-#: adm/memberForm.php:159 member/login.php:52 member/signup.php:35
+#: adm/memberForm.php:158 member/login.php:52 member/signup.php:35
 #: member/signup.php:47 member/signup.php:146 member/terms.php:7
 #: member/terms.php:35
 msgid "Sign Up"
 msgstr "회원가입"
 
 #: adm/memberFormUpdate.php:25 ajax/memberId.php:7 js/signup.js.php:100
-#: member/signupRun.php:31 setupRun.php:25
+#: member/signupRun.php:31 setupRun.php:26
 msgid "Please enter ID."
 msgstr "ID를 입력해 주십시오."
 
 #: adm/memberFormUpdate.php:28 ajax/memberId.php:10 member/loginCheck.php:28
-#: member/passwordCheck.php:29 member/signupRun.php:34 setupRun.php:28
+#: member/passwordCheck.php:29 member/signupRun.php:34 setupRun.php:29
 msgid "Please enter the ID format to fit."
 msgstr "ID를 형식에 맞게 입력해 주십시오."
 
 #: adm/memberFormUpdate.php:32 js/signup.js.php:105 member/signupRun.php:38
-#: setupRun.php:31
+#: setupRun.php:32
 msgid "Please enter Name."
 msgstr "이름을 입력해 주십시오."
 
 #: adm/memberFormUpdate.php:35 ajax/memberEmail.php:7 js/findPassword.js.php:14
 #: js/signup.js.php:110 member/findPassword2.php:16 member/signupRun.php:41
-#: setupRun.php:34
+#: setupRun.php:35
 msgid "Please enter Email."
 msgstr "이메일을 입력해 주십시오."
 
 #: adm/memberFormUpdate.php:38 ajax/memberEmail.php:10
 #: member/findPassword2.php:19 member/loginCheck.php:22
-#: member/passwordCheck.php:23 member/signupRun.php:44 setupRun.php:37
+#: member/passwordCheck.php:23 member/signupRun.php:44 setupRun.php:38
 msgid "Please enter the Email format to fit."
 msgstr "이메일 형식에 맞게 입력해 주십시오."
 
@@ -467,11 +468,15 @@ msgstr "이미 사용 중인 이메일입니다."
 msgid "Members of a higher level than you can not add."
 msgstr "자신보다 높은 레벨의 회원을 추가할 수 없습니다."
 
+#: adm/menu.php:5 adm/menu.php:12 adm/sidebarMenu.php:14
+msgid "Menu"
+msgstr "메뉴관리"
+
 #: adm/pages.php:4 adm/pagesForm.php:7 adm/sidebarMenu.php:9
 msgid "Pages"
 msgstr "페이지"
 
-#: adm/pages.php:82 adm/pagesForm.php:114
+#: adm/pages.php:82 adm/pagesForm.php:118
 msgid "Page ID"
 msgstr "페이지아이디"
 
@@ -483,7 +488,7 @@ msgstr "제목"
 msgid "Page Content"
 msgstr "내용"
 
-#: adm/pages.php:97 adm/pagesForm.php:121
+#: adm/pages.php:97 adm/pagesForm.php:125
 msgid "Subject"
 msgstr "제목"
 
@@ -495,69 +500,69 @@ msgstr "생성일"
 msgid "View"
 msgstr "조회"
 
-#: adm/pagesForm.php:59
+#: adm/pagesForm.php:63
 msgid "The page does not exist."
 msgstr "페이지가 존재하지 않습니다."
 
-#: adm/pagesForm.php:104
+#: adm/pagesForm.php:108
 msgid "Page Use"
 msgstr "사용"
 
-#: adm/pagesForm.php:128
+#: adm/pagesForm.php:132
 msgid "Header"
 msgstr "상단파일"
 
-#: adm/pagesForm.php:150
+#: adm/pagesForm.php:164
 msgid "Footer"
 msgstr "하단파일"
 
-#: adm/pagesForm.php:166
+#: adm/pagesForm.php:180
 msgid "Tags"
 msgstr "태그"
 
-#: adm/pagesForm.php:175
+#: adm/pagesForm.php:189
 msgid "Write"
 msgstr "작성"
 
-#: adm/pagesForm.php:337 adm/pagesFormUpdate.php:88
+#: adm/pagesForm.php:599 adm/pagesFormUpdate.php:89
 msgid "Please enter a Page ID"
 msgstr "페이지 아이디를 입력해 주십시오."
 
-#: adm/pagesForm.php:342 adm/pagesFormUpdate.php:91
+#: adm/pagesForm.php:604 adm/pagesFormUpdate.php:92
 msgid "Please enter a Subject"
 msgstr "제목을 입력해 주십시오."
 
-#: adm/pagesForm.php:347 adm/pagesFormUpdate.php:94
+#: adm/pagesForm.php:609 adm/pagesFormUpdate.php:95
 msgid "Please enter a Contents"
 msgstr "내용을 입력해 주십시오."
 
-#: adm/pagesFormUpdate.php:21 adm/pagesFormUpdate.php:151
+#: adm/pagesFormUpdate.php:21 adm/pagesFormUpdate.php:153
 msgid "Page does not exist"
 msgstr "페이지가 존재하지 않습니다."
 
-#: adm/pagesFormUpdate.php:101
+#: adm/pagesFormUpdate.php:102
 msgid "Please enter the header file correctly"
 msgstr "상단 파일을 올바르게 입력해 주십시오"
 
-#: adm/pagesFormUpdate.php:104 adm/pagesFormUpdate.php:112
+#: adm/pagesFormUpdate.php:105 adm/pagesFormUpdate.php:113
 #, php-format
 msgid "File %s does not exist."
 msgstr "파일 %s 는 존재하지 않습니다."
 
-#: adm/pagesFormUpdate.php:109
+#: adm/pagesFormUpdate.php:110
 msgid "Please enter the footer file correctly"
 msgstr "하단 파일을 올바르게 입력해 주십시오"
 
-#: adm/pagesFormUpdate.php:122 adm/pagesFormUpdate.php:159
+#: adm/pagesFormUpdate.php:123 adm/pagesFormUpdate.php:161
 #, php-format
 msgid "%s is a duplicate page id"
 msgstr "%s 는 중복된 페이지 아이디 입니다."
 
-#: adm/sidebarMenu.php:10 adm/visiting.php:6
+#: adm/sidebarMenu.php:10 adm/visiting.php:7
 msgid "Visiting"
 msgstr "방문기록"
 
-#: adm/sidebarMenu.php:14 adm/sitemap.php:4
+#: adm/sidebarMenu.php:15 adm/sitemap.php:4
 msgid "Sitemap"
 msgstr "사이트맵"
 
@@ -569,27 +574,27 @@ msgstr "사이트맵 생성"
 msgid "Recently created"
 msgstr "최근 생성일"
 
-#: adm/visiting.php:130 adm/visiting.php:153
+#: adm/visiting.php:127 adm/visiting.php:150
 msgid "IP"
 msgstr "IP"
 
-#: adm/visiting.php:131 adm/visiting.php:154
+#: adm/visiting.php:128 adm/visiting.php:151
 msgid "Referrer"
 msgstr "리퍼러"
 
-#: adm/visiting.php:155
+#: adm/visiting.php:152
 msgid "OS"
 msgstr "OS"
 
-#: adm/visiting.php:156
+#: adm/visiting.php:153
 msgid "Device"
 msgstr "접속기기"
 
-#: adm/visiting.php:157
+#: adm/visiting.php:154
 msgid "Browser"
 msgstr "브라우저"
 
-#: adm/visiting.php:158
+#: adm/visiting.php:155
 msgid "Visiting date"
 msgstr "방문일시"
 
@@ -940,7 +945,7 @@ msgstr "동의합니다."
 msgid "Privacy policy"
 msgstr "개인정보처리방침"
 
-#: setup.php:8 setupRun.php:14
+#: setup.php:8 setupRun.php:15
 msgid "Setup can not be executed."
 msgstr "설치 프로세스를 실행할 수 없습니다."
 
@@ -953,15 +958,15 @@ msgstr "%s 폴더에 쓰기 권한이 없습니다."
 msgid "Setup"
 msgstr "Setup"
 
-#: setupRun.php:40
+#: setupRun.php:41
 msgid "Please enter Password"
 msgstr "비밀번호를 입력해 주십시오"
 
-#: setupRun.php:345
+#: setupRun.php:362
 msgid "Complete!"
 msgstr "Complete!"
 
-#: setupRun.php:346
+#: setupRun.php:363
 msgid "NT-Core Setup is done well"
 msgstr "NT-Core Setup is done well"
 

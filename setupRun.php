@@ -64,7 +64,8 @@ $sql = " CREATE TABLE `{$nt['config_table']}` (
     `cf_token_time` int(11) NOT NULL DEFAULT '0',
     `cf_password_length` int(11) NOT NULL DEFAULT '0',
     `cf_2factor_auth` tinyint(4) NOT NULL DEFAULT '0',
-    `cf_exclude_agent` text COLLATE utf8mb4_unicode_ci NULL
+    `cf_exclude_agent` text COLLATE utf8mb4_unicode_ci NULL,
+    `cf_menus` text COLLATE utf8mb4_unicode_ci NULL
   ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci; ";
 
 if ($DB->exec($sql) === false)

@@ -113,4 +113,14 @@ jQuery(function() {
             dataType: "JSON"
         })
     });
+
+    jQuery(document).on("click", '.edit-menu', function(e) {
+        e.preventDefault();
+        e.stopPropagation();
+
+        jQuery(".nav .nav-link").removeClass("active");
+        jQuery(this).addClass("active");
+
+        PopupCenterDual(this.href, "editMenu", 1200, 800);
+    });
 });

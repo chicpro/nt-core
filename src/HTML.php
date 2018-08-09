@@ -500,4 +500,59 @@ class HTML
         }
 
     }
+
+    protected function makeMenu(array $data, bool $dropdown = false)
+    {
+        if (!is_array($data) || empty($data))
+            return '';
+
+        $menu = [];
+
+        foreach ($data as $val) {
+            if (!$val['text'])
+                continue;
+
+            if (isset($val['children']) && !empty($val['children'])) {
+                if ($dropdown) {
+                    $navClass = 'dropdown-item';
+                    $menu[] = '<li>';
+                } else {
+                    $navClass = 'nav-link';
+                    $menu[] = '<li class="nav-item dropdown">';
+                }
+
+                $menu[] = '<a class="'.$navClass.' dropdown-toggle" href="'.$val['href'].'" target="'.$val['target'].'"'.($val['title'] ? ' title="'.$val['title'].'"' : '').' role="button" data-toggle="dropdown" aria-expanded="false">'.getHtmlChar($val['text']).'</a>';
+                $menu[] = '<ul class="dropdown-menu">';
+                $menu[] = '<li>';
+                $menu[] = '<a class="dropdown-item" href="'.$val['href'].'" target="'.$val['target'].'"'.($val['title'] ? ' title="'.$val['title'].'"' : '').'>'.getHtmlChar($val['text']).'</a>';
+                $menu[] = '</li>';
+                $menu[] = '<li class="dropdown-divider"></li>';
+                $menu[] = $this->makeMenu($val['children'], true);
+                $menu[] = '</ul>';
+                $menu[] = '</li>';
+            } else {
+                if ($dropdown) {
+                    $menu[] = '<li>';
+                    $menu[] = '<a class="dropdown-item" href="'.$val['href'].'" target="'.$val['target'].'"'.($val['title'] ? ' title="'.$val['title'].'"' : '').'>'.getHtmlChar($val['text']).'</a>';
+                    $menu[] = '</li>';
+                } else {
+                    $menu[] = '<li class="nav-item">';
+                    $menu[] = '<a class="nav-link" href="'.$val['href'].'" target="'.$val['target'].'"'.($val['title'] ? ' title="'.$val['title'].'"' : '').'>'.getHtmlChar($val['text']).'</a>';
+                    $menu[] = '</li>';
+                }
+            }
+        }
+
+        return implode(PHP_EOL, $menu);
+    }
+
+    public function getMenus(string $menus)
+    {
+        $data = json_decode(__c('cf_menus'), true);
+
+        if (!is_array($data) || empty($data))
+            return '';
+
+        return $this->makeMenu($data);
+    }
 }

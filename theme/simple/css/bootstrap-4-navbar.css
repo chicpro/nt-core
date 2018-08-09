@@ -1,0 +1,3 @@
+.dropdown-menu .show > .dropdown-toggle::after{
+    transform: rotate(-90deg);
+}

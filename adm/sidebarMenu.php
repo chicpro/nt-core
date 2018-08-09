@@ -11,6 +11,7 @@ $_ADMIN_LINK = array(
 );
 
 if ($isSuper) {
+    $_ADMIN_LINK[] = array('name' => _('Menu'),          'link' => NT_ADMIN_URL.DIRECTORY_SEPARATOR.'menu.php',   'icon' =>'menu',       'key' => 'menu',  'class' => 'edit-menu');
     $_ADMIN_LINK[] = array('name' => _('Sitemap'),       'link' => NT_ADMIN_URL.DIRECTORY_SEPARATOR.'sitemap.php', 'icon' => 'cast',     'key' => 'sitemap');
     $_ADMIN_LINK[] = array('name' => _('Configuration'), 'link' => NT_ADMIN_URL.DIRECTORY_SEPARATOR.'config.php',  'icon' => 'settings', 'key' => 'config');
 }
@@ -30,7 +31,11 @@ function getSidebarMenu()
 
             foreach ($link['link'] as $lnk) {
                 if ($i == 0) {
-                    $menus = '<li class="nav-item">
+                    $class = '';
+                    if (isset($lnk['class']) && $lnk['class'])
+                        $class = ' '.$lnk['class'];
+
+                    $menus = '<li class="nav-item'.$class.'">
                                     <a class="nav-link" href="'.$lnk['link'].'">
                                         <span data-feather="'.$link['icon'].'"></span>
                                         '.getHtmlChar($link['name']).'
@@ -41,6 +46,9 @@ function getSidebarMenu()
                     $active = ' active';
                 else
                     $active = '';
+
+                if (isset($lnk['class']) && $lnk['class'])
+                    $active .= ' '.$lnk['class'];
 
                 $mns[] = '<li class="nav-item ml-3">
                                 <a class="nav-link'.$active.'" href="'.$lnk['link'].'">
@@ -65,6 +73,9 @@ function getSidebarMenu()
                 $active = ' active';
             else
                 $active = '';
+
+            if (isset($link['class']) && $link['class'])
+                    $active .= ' '.$link['class'];
 
             $menu[] = '<li class="nav-item">
                             <a class="nav-link'.$active.'" href="'.$link['link'].'">
