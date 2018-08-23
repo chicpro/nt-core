@@ -60,8 +60,6 @@ if (is_uploaded_file($temp['tmp_name'])) {
     $filetowrite = $imageFolder . DIRECTORY_SEPARATOR . getUploadedFileName() . '.' . $ext;
     move_uploaded_file($temp['tmp_name'], $filetowrite);
 
-    $_SESSION['editorImages'][] = basename($filetowrite);
-
     // Respond to the successful upload with JSON.
     // Use a location key to specify the path to the saved image resource.
     // { location : '/your/uploaded/image/file'}

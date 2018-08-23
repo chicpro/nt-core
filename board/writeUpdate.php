@@ -383,49 +383,41 @@ if (!empty($upload)) {
 }
 
 // Editor Image
-if (is_array($_SESSION['editorImages']) && !empty($_SESSION['editorImages'])) {
-    $editorImages = getEditorImages($bo_content);
+$editorImages = getEditorImages($bo_content);
 
-    if (is_array($editorImages) && !empty($editorImages)) {
-        $imageNames = array();
+if (is_array($editorImages) && !empty($editorImages)) {
+    foreach ($editorImages[1] as $img) {
+        if (!$img)
+            continue;
 
-        foreach ($editorImages[1] as $img) {
-            if (!$img)
-                continue;
+        if (!preg_match('#^'.preg_quote(NT_DATA_URL).'.+#i', $img))
+            continue;
 
-            if (preg_match('#^'.preg_quote(NT_DATA_URL).'.+#i', $img))
-                $imageNames[] = basename(str_replace(NT_URL, '', $img));
-        }
+        if (strpos($img, '/temp/') === false)
+            continue;
 
-        foreach ($_SESSION['editorImages'] as $image) {
-            if (!$image)
-                continue;
+        $image = basename(str_replace(NT_URL, '', $img));
 
-            $file = NT_DATA_PATH.DIRECTORY_SEPARATOR.EDITOR_FILE_DIR.DIRECTORY_SEPARATOR.'temp'.DIRECTORY_SEPARATOR.$image;
+        $file = NT_DATA_PATH.DIRECTORY_SEPARATOR.EDITOR_FILE_DIR.DIRECTORY_SEPARATOR.'temp'.DIRECTORY_SEPARATOR.$image;
 
-            if(!is_file($file))
-                continue;
+        if(!is_file($file))
+            continue;
 
-            if (in_array($image, $imageNames)) {
-                $ym = substr(str_replace('-', '', NT_TIME_YMD), 2, 4);
-                $newFile = str_replace(DIRECTORY_SEPARATOR.'temp'.DIRECTORY_SEPARATOR, DIRECTORY_SEPARATOR.$ym.DIRECTORY_SEPARATOR, $file);
-                $newDir  = dirname($newFile);
-                if (!is_dir($newDir))
-                    mkdir($newDir, 0755, true);
+        $ym = substr(str_replace('-', '', NT_TIME_YMD), 2, 4);
+        $newFile = str_replace(DIRECTORY_SEPARATOR.'temp'.DIRECTORY_SEPARATOR, DIRECTORY_SEPARATOR.$ym.DIRECTORY_SEPARATOR, $file);
+        $newDir  = dirname($newFile);
+        if (!is_dir($newDir))
+            mkdir($newDir, 0755, true);
 
-                rename($file, $newFile);
+        rename($file, $newFile);
 
-                $bo_content = str_replace(DIRECTORY_SEPARATOR.'temp'.DIRECTORY_SEPARATOR.$image, DIRECTORY_SEPARATOR.$ym.DIRECTORY_SEPARATOR.$image, $bo_content);
-            }
-        }
+        $bo_content = str_replace(DIRECTORY_SEPARATOR.'temp'.DIRECTORY_SEPARATOR.$image, DIRECTORY_SEPARATOR.$ym.DIRECTORY_SEPARATOR.$image, $bo_content);
     }
 
     $sql = " update `{$nt['board_table']}` set bo_content = :bo_content where bo_no = :bo_no ";
     $DB->prepare($sql);
     $DB->execute([':bo_content' => $bo_content, ':bo_no' => $no]);
 }
-
-unset($_SESSION['editorImages']);
 
 // 수정 후 변경된 이미지 처리
 if ($w == 'u') {
