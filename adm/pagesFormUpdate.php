@@ -190,7 +190,7 @@ if (is_array($editorImages) && !empty($editorImages)) {
         if (!preg_match('#^'.preg_quote(NT_DATA_URL).'.+#i', $img))
             continue;
 
-        if (strpos($img, '/temp/') === false)
+            if (strpos($img, DIRECTORY_SEPARATOR.'temp'.DIRECTORY_SEPARATOR) === false)
             continue;
 
         $image = basename(str_replace(NT_URL, '', $img));
