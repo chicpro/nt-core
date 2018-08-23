@@ -90,7 +90,6 @@ foreach (glob($themeDir.'footer*.php') as $file) {
 }
 
 $listHref = NT_ADMIN_URL.DIRECTORY_SEPARATOR.'pages.php?'.http_build_query($qstr, '', '&amp;');
-$_SESSION['grapesImages'] = array();
 ?>
 
 <div class="mb-4">
