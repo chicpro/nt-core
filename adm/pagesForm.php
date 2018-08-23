@@ -196,10 +196,14 @@ $_SESSION['grapesImages'] = array();
 
 <?php
 // 내용 중 이미지
-$editorImages = getEditorImages($pages['pg_content']);
-$images = implode('", "', $editorImages[1]);
-if ($images)
-    $images = '"'.$images.'"';
+if ($w == 'u') {
+    $editorImages = getEditorImages($pages['pg_content']);
+    $images = implode('", "', $editorImages[1]);
+    if ($images)
+        $images = '["'.$images.'"]';
+} else {
+    $images = '[]';
+}
 ?>
 
 <script>
@@ -215,7 +219,7 @@ var editor = grapesjs.init({
     	storeAfterUpload  : true,
         upload: '<?php echo NT_ADMIN_URL.DIRECTORY_SEPARATOR; ?>pagesAssetsUpload.php',
         uploadText: 'Drop files here',
-        assets: [<?php echo $images; ?>],
+        assets: <?php echo $images; ?>,
         uploadFile: function(e) {
 		    var files = e.dataTransfer ? e.dataTransfer.files : e.target.files;
             var formData = new FormData();

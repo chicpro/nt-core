@@ -75,8 +75,6 @@ foreach ($_FILES as $temp) {
 
         $files[] = $fileInfo;
 
-        $_SESSION['grapesImages'][] = basename($filetowrite);
-
         echo json_encode(array('data' =>$files));
     }
 }
