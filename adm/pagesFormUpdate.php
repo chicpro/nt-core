@@ -149,7 +149,7 @@ if ($w == '') {
     $DB->prepare($sql);
     $DB->execute([':pg_no' => $no]);
     $pages = $DB->fetch();
-    if (!$pages['pg_content'])
+    if (!$pages['pg_no'])
         dieJson(_('Page does not exist'));
 
     $sql = " select count(*) as cnt from `{$nt['pages_table']}` where pg_id = :pg_id and pg_no <> :pg_no ";
