@@ -195,15 +195,12 @@ $listHref = NT_ADMIN_URL.DIRECTORY_SEPARATOR.'pages.php?'.http_build_query($qstr
 
 <?php
 // 내용 중 이미지
+$images = '[]';
 if ($w == 'u') {
     $editorImages = getEditorImages($pages['pg_content']);
-    $images = implode('", "', $editorImages[1]);
-    if ($images)
-        $images = '["'.$images.'"]';
-    else
-        $images = '[]';
-} else {
-    $images = '[]';
+    $image = implode('", "', $editorImages[1]);
+    if ($image)
+        $images = '["'.$image.'"]';
 }
 ?>
 
