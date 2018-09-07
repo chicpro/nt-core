@@ -200,6 +200,8 @@ if ($w == 'u') {
     $images = implode('", "', $editorImages[1]);
     if ($images)
         $images = '["'.$images.'"]';
+    else
+        $images = '[]';
 } else {
     $images = '[]';
 }
