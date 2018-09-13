@@ -22,10 +22,23 @@ $deleteHref = NT_URL.'/'.BOARD_DIR.'/'.$id.'/delete/'.$no.'?'.$qry;
 $writeHref  = NT_URL.'/'.BOARD_DIR.'/'.$id.'/write';
 
 $listButton   = '<a href="'.$listHref.'" class="btn btn-sm btn-outline-success">'._d('Lists', THEME_LOCALE_DOMAIN).'</a>';
-$editButton   = '<a href="'.$editHref.'" class="btn btn-sm btn-outline-secondary">'._d('Edit post', THEME_LOCALE_DOMAIN).'</a>';
-$replyButton  = '<a href="'.$replyHref.'" class="btn btn-sm btn-outline-secondary">'._d('Reply post', THEME_LOCALE_DOMAIN).'</a>';
-$deleteButton = '<a href="'.$deleteHref.'" class="btn btn-sm btn-outline-secondary post-delete">'._d('Delete post', THEME_LOCALE_DOMAIN).'</a>';
-$writeButton  = '<a href="'.$writeHref.'" class="btn btn-sm btn-outline-info">'._d('Write post', THEME_LOCALE_DOMAIN).'</a>';
+if (!$isAdmin && ($isGuest || $write['mb_uid'] != $member['mb_uid']) && $member['mb_level'] < $board['bo_write_level']) {
+    $editButton = '';
+    $deleteButton = '';
+} else {
+    $editButton   = '<a href="'.$editHref.'" class="btn btn-sm btn-outline-secondary">'._d('Edit post', THEME_LOCALE_DOMAIN).'</a>';
+    $deleteButton = '<a href="'.$deleteHref.'" class="btn btn-sm btn-outline-secondary post-delete">'._d('Delete post', THEME_LOCALE_DOMAIN).'</a>';
+}
+
+if (!$isAdmin && $member['mb_level'] < $board['bo_reply_level'])
+    $replyButton = '';
+else
+    $replyButton  = '<a href="'.$replyHref.'" class="btn btn-sm btn-outline-secondary">'._d('Reply post', THEME_LOCALE_DOMAIN).'</a>';
+
+if (!$isAdmin && $member['mb_level'] < $board['bo_write_level'])
+    $writeButton = '';
+else
+    $writeButton  = '<a href="'.$writeHref.'" class="btn btn-sm btn-outline-info">'._d('Write post', THEME_LOCALE_DOMAIN).'</a>';
 ?>
 
 <div class="mb-4">

@@ -4,7 +4,10 @@ $html->addJavaScript(NT_JS_URL.DIRECTORY_SEPARATOR.'board.js.php', 'footer', 10)
 
 $html->getPageHeader();
 
-$writeButton = '<a href="'.NT_URL.'/'.BOARD_DIR.'/'.$id.'/write" class="btn btn-sm btn-outline-info">'._d('Write a post', THEME_LOCALE_DOMAIN).'</a>';
+if (!$isAdmin && $member['mb_level'] < $board['bo_write_level'])
+    $writeButton = '';
+else
+    $writeButton = '<a href="'.NT_URL.'/board/'.$id.'/write" class="btn btn-sm btn-outline-info">'._d('Write a post', THEME_LOCALE_DOMAIN).'</a>';
 ?>
 
 <div class="mb-4">
