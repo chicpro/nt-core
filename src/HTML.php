@@ -402,7 +402,7 @@ class HTML
         if (!empty($this->metaTag)) {
             foreach (array('title', 'description', 'keywords') as $key) {
                 if (array_key_exists($key, $this->metaTag) &&$this->metaTag[$key]) {
-                    $metaTags[] = '<meta name="'.$key.'" content="'.htmlentities($this->metaTag[$key], ENT_QUOTES).'"/>';
+                    $metaTags[] = '<meta name="'.$key.'" content="'.getHtmlChar($this->metaTag[$key], ENT_QUOTES).'"/>';
                     unset($this->metaTag[$key]);
                 }
             }
@@ -416,7 +416,7 @@ class HTML
                         $metaTags[] = '<link rel="'.$name.'" href="'.$content.'"/>';
                         break;
                     default:
-                        $metaTags[] = '<meta name="'.$name.'" content="'.htmlentities($content, ENT_QUOTES).'"/>';
+                        $metaTags[] = '<meta name="'.$name.'" content="'.getHtmlChar($content, ENT_QUOTES).'"/>';
                         break;
                 }
             }
@@ -450,7 +450,7 @@ class HTML
         if (!empty($this->ogTag)) {
             foreach (array('type', 'title', 'description', 'url', 'site_name', 'image', 'locale') as $key) {
                 if (array_key_exists($key, $this->ogTag) && $this->ogTag[$key]) {
-                    $metaTags[] = '<meta property="og:'.$key.'" content="'.htmlentities($this->ogTag[$key], ENT_QUOTES).'"/>';
+                    $metaTags[] = '<meta property="og:'.$key.'" content="'.getHtmlChar($this->ogTag[$key], ENT_QUOTES).'"/>';
                     unset($this->ogTag[$key]);
                 }
             }
@@ -459,7 +459,7 @@ class HTML
                 if (!$content)
                     continue;
 
-                $metaTags[] = '<meta property="og:'.$property.'" content="'.htmlentities($content, ENT_QUOTES).'"/>';
+                $metaTags[] = '<meta property="og:'.$property.'" content="'.getHtmlChar($content, ENT_QUOTES).'"/>';
             }
         }
 
