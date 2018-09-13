@@ -40,6 +40,11 @@ function getPaging(int $totalItems, int $itemsPerPage, int $maxPagesToShow, int 
 
 function getHtmlChar($str)
 {
+    $search  = ['&amp;'];
+    $replace = ['&'];
+
+    $str = str_replace($search, $replace, $str);
+
     return htmlentities($str, ENT_QUOTES);
 }
 
