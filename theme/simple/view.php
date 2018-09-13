@@ -1,5 +1,5 @@
 <?php
-$html->setPageTitle(getHtmlChar($board['bo_title']));
+$html->setPageTitle(getHtmlChar($view['subject']));
 $html->addJavaScript(NT_JS_URL.DIRECTORY_SEPARATOR.'board.js.php', 'footer', 10);
 $html->addJavaScript(NT_JS_URL.DIRECTORY_SEPARATOR.'comment.js.php', 'footer', 10);
 
