@@ -129,6 +129,24 @@ class DB
         }
     }
 
+    public function query(string $query, $fetchMode = PDO::FETCH_ASSOC)
+    {
+        try {
+            $result = $this->pdo->query($query, $fetchMode);
+
+            if ($result === false) {
+                $error = $this->pdo->errorInfo();
+                $this->error = $error[0] . ' ' . $error[2];
+                return false;
+            }
+
+            return $result;
+        } catch (\PDOException $e) {
+            $this->error = $e->getMessage();
+            return false;
+        }
+    }
+
     public function fetchAll($args = \PDO::FETCH_ASSOC)
     {
         return $this->stmt->fetchAll($args);
