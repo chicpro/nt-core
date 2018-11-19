@@ -544,6 +544,62 @@ function getPagesContent($id, bool $viewCount = true)
     return array('content' => $content, 'code' => '');
 }
 
+function getBoardListThumbnail(int $no, int $width, int $height = 0, string $content = '')
+{
+    global $nt, $DB;
+
+    $images = [];
+
+    $sql = " select fl_file, fl_type from `{$nt['board_file_table']}` where bo_no = :bo_no order by fl_no asc ";
+    $DB->prepare($sql);
+    $DB->bindValue(':bo_no', $no);
+    $DB->execute();
+    $result = $DB->fetchAll();
+
+    for ($i = 0; $row = array_shift($result); $i++) {
+        if ($row['fl_file']) {
+            if (preg_match('#^image/.+$#i', $row['fl_type']))
+                $images[] = $row;
+        }
+    }
+
+    $thumb = array();
+    $thumbnail = new THUMBNAIL();
+
+    if (!empty($images)) {
+        foreach ($images as $img) {
+            $src = NT_FILE_PATH.DIRECTORY_SEPARATOR.$img['fl_file'];
+            if (is_file($src)) {
+                $thumb = $thumbnail->thumbnail($src, $width, $height);
+
+                if ($thumb)
+                    break;
+            }
+        }
+    }
+
+    if (!$thumb && $content) {
+        // Editor image
+        $imgs = getEditorImages($content);
+
+        foreach ($imgs[1] as $src) {
+            if (!preg_match('#^'.preg_quote(NT_DATA_URL).'.+$#', $src))
+                continue;
+
+            $file = str_replace(NT_DATA_URL, NT_DATA_PATH, $src);
+
+            if (is_file($file)) {
+                $thumb = $thumbnail->thumbnail($file, $width, $height);
+
+                if ($thumb)
+                    break;
+            }
+        }
+    }
+
+    return $thumb;
+}
+
 function removeScriptString(string $string)
 {
     return preg_replace('#<script\\b[^>]*>(.*?)<\\/script>#is', '', $string);

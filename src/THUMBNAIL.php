@@ -3,8 +3,9 @@
 
 class THUMBNAIL
 {
-    protected $width;
-    protected $height;
+    public $width;
+    public $height;
+
     protected $source;
     protected $target;
     protected $create;
@@ -62,17 +63,17 @@ class THUMBNAIL
             $this->height = $height;
 
         if(!$this->width && !$this->height)
-            return;
+            return false;
 
         if ($source)
             $this->source = $source;
 
         if (!is_file($this->source))
-            return;
+            return false;
 
         $size = @getimagesize($this->source);
         if ($size[2] < 1 || $size[2] > 3)
-            return;
+            return false;
 
         $thumbName = pathinfo($this->source, PATHINFO_FILENAME);
         if (!$target)
@@ -85,7 +86,7 @@ class THUMBNAIL
             mkdir($targetDir, 0755, true);
 
         if (!(is_dir($targetDir) && is_writable($targetDir)))
-            return '';
+            return false;
 
         if($size[2] == 1) {
             if($this->isAnimatedGif($source))

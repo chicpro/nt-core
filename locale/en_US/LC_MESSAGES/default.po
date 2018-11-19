@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"POT-Creation-Date: 2018-11-19 11:16+0900\n"
-"PO-Revision-Date: 2018-11-19 11:16+0900\n"
+"POT-Creation-Date: 2018-11-19 14:59+0900\n"
+"PO-Revision-Date: 2018-11-19 14:59+0900\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: en_US\n"
@@ -37,7 +37,7 @@ msgstr "Total"
 msgid "All items"
 msgstr "All items"
 
-#: adm/board.php:80 adm/boardForm.php:47
+#: adm/board.php:80 adm/boardForm.php:52
 msgid "Board ID"
 msgstr "Board ID"
 
@@ -50,7 +50,7 @@ msgid "Search"
 msgstr "Search"
 
 #: adm/board.php:93 adm/member.php:84 adm/member.php:100 adm/memberForm.php:49
-#: adm/pages.php:96 member/signup.php:60 setup.php:49
+#: adm/pages.php:96 member/signup.php:60 setup.php:45
 msgid "ID"
 msgstr "ID"
 
@@ -86,100 +86,112 @@ msgstr "Edit"
 msgid "No data available."
 msgstr "No data available."
 
-#: adm/boardForm.php:22 adm/boardFormUpdate.php:95
+#: adm/boardForm.php:22 adm/boardFormUpdate.php:103
 msgid "Board information does not exist."
 msgstr "Board information does not exist."
 
-#: adm/boardForm.php:51 adm/memberForm.php:53 setup.php:52
+#: adm/boardForm.php:56 adm/memberForm.php:53 setup.php:48
 msgid "Only alphabetic, numeric, and _ can be used"
 msgstr "Only alphabetic, numeric, and _ can be used"
 
-#: adm/boardForm.php:57
+#: adm/boardForm.php:62
 msgid "Board title"
 msgstr "Board title"
 
-#: adm/boardForm.php:64
+#: adm/boardForm.php:69
 msgid "Use board"
 msgstr "Use board"
 
-#: adm/boardForm.php:67 adm/boardForm.php:215 adm/boardForm.php:225
+#: adm/boardForm.php:72 adm/boardForm.php:241 adm/boardForm.php:251
 #: adm/config.php:181 adm/memberForm.php:110 adm/pagesForm.php:110
 #: member/signup.php:103
 msgid "Used"
 msgstr "Used"
 
-#: adm/boardForm.php:68 adm/boardForm.php:216 adm/boardForm.php:226
+#: adm/boardForm.php:73 adm/boardForm.php:242 adm/boardForm.php:252
 #: adm/config.php:182 adm/memberForm.php:111 adm/pagesForm.php:111
 #: adm/pagesForm.php:141 adm/pagesForm.php:173 member/signup.php:104
 msgid "Not used"
 msgstr "Not used"
 
-#: adm/boardForm.php:74
-#| msgid "Board ID"
+#: adm/boardForm.php:79
 msgid "Board skin"
 msgstr "Board skin"
 
-#: adm/boardForm.php:89
+#: adm/boardForm.php:94
 msgid "Board category"
 msgstr "Board category"
 
-#: adm/boardForm.php:92
+#: adm/boardForm.php:97
 msgid "Input example : Category1,Category2"
 msgstr "Input example : Category1,Category2"
 
-#: adm/boardForm.php:97
+#: adm/boardForm.php:102
 msgid "Subject length"
 msgstr "Subject length"
 
-#: adm/boardForm.php:104 adm/config.php:129
+#: adm/boardForm.php:109 adm/config.php:129
 msgid "Lines per page"
 msgstr "Lines per page"
 
-#: adm/boardForm.php:111 adm/config.php:136
+#: adm/boardForm.php:116 adm/config.php:136
 msgid "Number of pages"
 msgstr "Number of pages"
 
-#: adm/boardForm.php:118
+#: adm/boardForm.php:123
+#| msgid "Number of pages"
+msgid "Number of images in one line"
+msgstr "Number of images in one line"
+
+#: adm/boardForm.php:130
+msgid "Thumbnail width"
+msgstr "Thumbnail width"
+
+#: adm/boardForm.php:137
+msgid "Thumbnail height"
+msgstr "Thumbnail height"
+
+#: adm/boardForm.php:144
 msgid "List view permissions"
 msgstr "List view permissions"
 
-#: adm/boardForm.php:134
+#: adm/boardForm.php:160
 msgid "Content view permissions"
 msgstr "Content view permissions"
 
-#: adm/boardForm.php:150
+#: adm/boardForm.php:176
 msgid "Posts written permissions"
 msgstr "Posts written permissions"
 
-#: adm/boardForm.php:166
+#: adm/boardForm.php:192
 msgid "Comments written permissions"
 msgstr "Comments written permissions"
 
-#: adm/boardForm.php:182
+#: adm/boardForm.php:208
 msgid "Permission to create replies"
 msgstr "Permission to create replies"
 
-#: adm/boardForm.php:198
+#: adm/boardForm.php:224
 msgid "Number of attachments"
 msgstr "Number of attachments"
 
-#: adm/boardForm.php:205
+#: adm/boardForm.php:231
 msgid "Number of links"
 msgstr "Number of links"
 
-#: adm/boardForm.php:212
+#: adm/boardForm.php:238
 msgid "Use Captcha"
 msgstr "Use Captcha"
 
-#: adm/boardForm.php:222
+#: adm/boardForm.php:248
 msgid "Use Comment Captcha"
 msgstr "Use Comment Captcha"
 
-#: adm/boardForm.php:234 adm/config.php:229 adm/memberForm.php:166
+#: adm/boardForm.php:260 adm/config.php:229 adm/memberForm.php:166
 msgid "Save"
 msgstr "Save"
 
-#: adm/boardForm.php:235 adm/memberForm.php:167 adm/pagesForm.php:189
+#: adm/boardForm.php:261 adm/memberForm.php:167 adm/pagesForm.php:189
 msgid "List"
 msgstr "List"
 
@@ -193,20 +205,24 @@ msgstr "List"
 msgid "Please use it in the correct way."
 msgstr "Please use it in the correct way."
 
-#: adm/boardFormUpdate.php:47
+#: adm/boardFormUpdate.php:52
 msgid "Please enter the Board ID."
 msgstr "Please enter the Board ID."
 
-#: adm/boardFormUpdate.php:50
+#: adm/boardFormUpdate.php:55
 msgid "Please enter the Board Title."
 msgstr "Please enter the Board Title."
 
-#: adm/boardFormUpdate.php:68
+#: adm/boardFormUpdate.php:58 board/board.inc.php:13
+msgid "Please specify the board skin correctly."
+msgstr "Please specify the board skin correctly."
+
+#: adm/boardFormUpdate.php:76
 #, php-format
 msgid "%s is duplicated Board ID."
 msgstr "%s is duplicated Board ID."
 
-#: adm/boardFormUpdate.php:117 adm/memberFormUpdate.php:181
+#: adm/boardFormUpdate.php:125 adm/memberFormUpdate.php:181
 msgid ""
 "An error occurred while adding or editing the information. Please try again."
 msgstr ""
@@ -325,7 +341,7 @@ msgstr "Favicon delete"
 msgid "An error occurred while editing the information. Please try again."
 msgstr "An error occurred while editing the information. Please try again."
 
-#: adm/header.php:11 setupRun.php:365
+#: adm/header.php:11 setupRun.php:364
 msgid "Home"
 msgstr "Home"
 
@@ -355,7 +371,7 @@ msgid "Member"
 msgstr "Member"
 
 #: adm/member.php:85 adm/member.php:102 adm/memberForm.php:64
-#: member/findPassword.php:30 member/signup.php:74 setup.php:62
+#: member/findPassword.php:30 member/signup.php:74 setup.php:58
 msgid "Email"
 msgstr "Email"
 
@@ -367,7 +383,7 @@ msgstr "Level"
 msgid "Number"
 msgstr "Number"
 
-#: adm/member.php:101 adm/memberForm.php:57 member/signup.php:67 setup.php:56
+#: adm/member.php:101 adm/memberForm.php:57 member/signup.php:67 setup.php:52
 msgid "Name"
 msgstr "Name"
 
@@ -396,7 +412,7 @@ msgstr "Members of a higher level than you can not modify."
 
 #: adm/memberForm.php:71 board/password.php:42 board/password.php:43
 #: member/login.php:30 member/login.php:31 member/password.php:22
-#: member/password.php:23 member/signup.php:81 setup.php:68
+#: member/password.php:23 member/signup.php:81 setup.php:64
 msgid "Password"
 msgstr "Password"
 
@@ -431,29 +447,29 @@ msgid "Sign Up"
 msgstr "Sign Up"
 
 #: adm/memberFormUpdate.php:25 ajax/memberId.php:7 js/signup.js.php:100
-#: member/signupRun.php:31 setupRun.php:26
+#: member/signupRun.php:31 setupRun.php:22
 msgid "Please enter ID."
 msgstr "Please enter ID."
 
 #: adm/memberFormUpdate.php:28 ajax/memberId.php:10 member/loginCheck.php:28
-#: member/passwordCheck.php:29 member/signupRun.php:34 setupRun.php:29
+#: member/passwordCheck.php:29 member/signupRun.php:34 setupRun.php:25
 msgid "Please enter the ID format to fit."
 msgstr "Please enter the ID format to fit."
 
 #: adm/memberFormUpdate.php:32 js/signup.js.php:105 member/signupRun.php:38
-#: setupRun.php:32
+#: setupRun.php:28
 msgid "Please enter Name."
 msgstr "Please enter Name."
 
 #: adm/memberFormUpdate.php:35 ajax/memberEmail.php:7 js/findPassword.js.php:14
 #: js/signup.js.php:110 member/findPassword2.php:16 member/signupRun.php:41
-#: setupRun.php:35
+#: setupRun.php:31
 msgid "Please enter Email."
 msgstr "Please enter Email."
 
 #: adm/memberFormUpdate.php:38 ajax/memberEmail.php:10
 #: member/findPassword2.php:19 member/loginCheck.php:22
-#: member/passwordCheck.php:23 member/signupRun.php:44 setupRun.php:38
+#: member/passwordCheck.php:23 member/signupRun.php:44 setupRun.php:34
 msgid "Please enter the Email format to fit."
 msgstr "Please enter the Email format to fit."
 
@@ -610,11 +626,6 @@ msgstr "Visiting date"
 #: board/board.inc.php:8
 msgid "The board does not exist."
 msgstr "The board does not exist."
-
-#: board/board.inc.php:13
-#| msgid "Please select the category correctly."
-msgid "Please specify the board skin correctly."
-msgstr "Please specify the board skin correctly."
 
 #: board/commentAction.php:12 board/commentAction.php:52
 #: board/commentUpdate.php:18 board/commentUpdate.php:91
@@ -965,28 +976,28 @@ msgstr "I agree."
 msgid "Privacy policy"
 msgstr "Privacy policy"
 
-#: setup.php:8 setupRun.php:15
+#: setup.php:8 setupRun.php:11
 msgid "Setup can not be executed."
 msgstr "Setup can not be executed."
 
-#: setup.php:44
+#: setup.php:40
 #, php-format
 msgid "Do not have permission to write to the %s folder."
 msgstr "Do not have permission to write to the %s folder."
 
-#: setup.php:75
+#: setup.php:71
 msgid "Setup"
 msgstr "Setup"
 
-#: setupRun.php:41
+#: setupRun.php:37
 msgid "Please enter Password"
 msgstr "Please enter Password"
 
-#: setupRun.php:363
+#: setupRun.php:362
 msgid "Complete!"
 msgstr "Complete!"
 
-#: setupRun.php:364
+#: setupRun.php:363
 msgid "NT-Core Setup is done well"
 msgstr "NT-Core Setup is done well"
 

@@ -221,6 +221,9 @@ $sql = " CREATE TABLE `{$nt['board_config_table']}` (
     `bo_subject_len` int(11) DEFAULT NULL,
     `bo_page_rows` int(11) DEFAULT NULL,
     `bo_page_limit` int(11) DEFAULT NULL,
+    `bo_gallery_cols` int(11) DEFAULT NULL,
+    `bo_thumb_width` int(11) DEFAULT NULL,
+    `bo_thumb_height` int(11) DEFAULT NULL,
     `bo_list_level` int(11) DEFAULT NULL,
     `bo_view_level` int(11) DEFAULT NULL,
     `bo_write_level` int(11) DEFAULT NULL,
@@ -266,7 +269,7 @@ if ($DB->exec($sql) === false)
     die($DB->error);
 
 // free Board Create
-$sql = " insert into `{$nt['board_config_table']}` ( bo_id, bo_title, bo_use, bo_skin, bo_subject_len, bo_page_rows, bo_page_limit, bo_list_level, bo_view_level, bo_write_level, bo_comment_level, bo_reply_level, bo_file_limit, bo_link_limit, bo_captcha_use, bo_captcha_comment ) values ( 'free', 'Free Board', '1', 'board', '50', '{$config['cf_page_rows']}', '{$config['cf_page_limit']}', '1', '1', '1', '1', '1', '2', '1', '0', '0' ) ";
+$sql = " insert into `{$nt['board_config_table']}` ( bo_id, bo_title, bo_use, bo_skin, bo_subject_len, bo_page_rows, bo_page_limit, bo_gallery_cols, bo_thumb_width, bo_thumb_height, bo_list_level, bo_view_level, bo_write_level, bo_comment_level, bo_reply_level, bo_file_limit, bo_link_limit, bo_captcha_use, bo_captcha_comment ) values ( 'free', 'Free Board', '1', 'board', '50', '{$config['cf_page_rows']}', '{$config['cf_page_limit']}', '0', '0', '0', '1', '1', '1', '1', '1', '2', '1', '0', '0' ) ";
 
 if ($DB->exec($sql) === false)
     die($DB->error);

@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"POT-Creation-Date: 2018-11-19 11:16+0900\n"
-"PO-Revision-Date: 2018-11-19 11:17+0900\n"
+"POT-Creation-Date: 2018-11-19 14:59+0900\n"
+"PO-Revision-Date: 2018-11-19 14:59+0900\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: ko_KR\n"
@@ -37,7 +37,7 @@ msgstr "전체"
 msgid "All items"
 msgstr "전체항목"
 
-#: adm/board.php:80 adm/boardForm.php:47
+#: adm/board.php:80 adm/boardForm.php:52
 msgid "Board ID"
 msgstr "게시판 아이디"
 
@@ -50,7 +50,7 @@ msgid "Search"
 msgstr "Search"
 
 #: adm/board.php:93 adm/member.php:84 adm/member.php:100 adm/memberForm.php:49
-#: adm/pages.php:96 member/signup.php:60 setup.php:49
+#: adm/pages.php:96 member/signup.php:60 setup.php:45
 msgid "ID"
 msgstr "아이디"
 
@@ -86,99 +86,111 @@ msgstr "수정"
 msgid "No data available."
 msgstr "자료가 없습니다."
 
-#: adm/boardForm.php:22 adm/boardFormUpdate.php:95
+#: adm/boardForm.php:22 adm/boardFormUpdate.php:103
 msgid "Board information does not exist."
 msgstr "게시판 정보가 존재하지 않습니다."
 
-#: adm/boardForm.php:51 adm/memberForm.php:53 setup.php:52
+#: adm/boardForm.php:56 adm/memberForm.php:53 setup.php:48
 msgid "Only alphabetic, numeric, and _ can be used"
 msgstr "영문자, 숫자, _ 만 사용 가능"
 
-#: adm/boardForm.php:57
+#: adm/boardForm.php:62
 msgid "Board title"
 msgstr "게시판 제목"
 
-#: adm/boardForm.php:64
+#: adm/boardForm.php:69
 msgid "Use board"
 msgstr "게시판 사용"
 
-#: adm/boardForm.php:67 adm/boardForm.php:215 adm/boardForm.php:225
+#: adm/boardForm.php:72 adm/boardForm.php:241 adm/boardForm.php:251
 #: adm/config.php:181 adm/memberForm.php:110 adm/pagesForm.php:110
 #: member/signup.php:103
 msgid "Used"
 msgstr "사용함"
 
-#: adm/boardForm.php:68 adm/boardForm.php:216 adm/boardForm.php:226
+#: adm/boardForm.php:73 adm/boardForm.php:242 adm/boardForm.php:252
 #: adm/config.php:182 adm/memberForm.php:111 adm/pagesForm.php:111
 #: adm/pagesForm.php:141 adm/pagesForm.php:173 member/signup.php:104
 msgid "Not used"
 msgstr "사용안함"
 
-#: adm/boardForm.php:74
+#: adm/boardForm.php:79
 msgid "Board skin"
 msgstr "게시판 스킨"
 
-#: adm/boardForm.php:89
+#: adm/boardForm.php:94
 msgid "Board category"
 msgstr "게시판 분류"
 
-#: adm/boardForm.php:92
+#: adm/boardForm.php:97
 msgid "Input example : Category1,Category2"
 msgstr "입력 예 : 분류1, 분류2"
 
-#: adm/boardForm.php:97
+#: adm/boardForm.php:102
 msgid "Subject length"
 msgstr "제목 글자수"
 
-#: adm/boardForm.php:104 adm/config.php:129
+#: adm/boardForm.php:109 adm/config.php:129
 msgid "Lines per page"
 msgstr "페이지당 라인수"
 
-#: adm/boardForm.php:111 adm/config.php:136
+#: adm/boardForm.php:116 adm/config.php:136
 msgid "Number of pages"
 msgstr "페이지 표시수"
 
-#: adm/boardForm.php:118
+#: adm/boardForm.php:123
+msgid "Number of images in one line"
+msgstr "이미지 수"
+
+#: adm/boardForm.php:130
+msgid "Thumbnail width"
+msgstr "썸네일 넓이"
+
+#: adm/boardForm.php:137
+msgid "Thumbnail height"
+msgstr "썸네일 높이"
+
+#: adm/boardForm.php:144
 msgid "List view permissions"
 msgstr "목록보기 레벨"
 
-#: adm/boardForm.php:134
+#: adm/boardForm.php:160
 msgid "Content view permissions"
 msgstr "내용보기 레벨"
 
-#: adm/boardForm.php:150
+#: adm/boardForm.php:176
 msgid "Posts written permissions"
 msgstr "글작성 레벨"
 
-#: adm/boardForm.php:166
+#: adm/boardForm.php:192
 msgid "Comments written permissions"
 msgstr "댓글작성 레벨"
 
-#: adm/boardForm.php:182
+#: adm/boardForm.php:208
 msgid "Permission to create replies"
 msgstr "답글작성 레벨"
 
-#: adm/boardForm.php:198
+#: adm/boardForm.php:224
 msgid "Number of attachments"
 msgstr "첨부파일 개수"
 
-#: adm/boardForm.php:205
+#: adm/boardForm.php:231
 msgid "Number of links"
 msgstr "링크 개수"
 
-#: adm/boardForm.php:212
+#: adm/boardForm.php:238
 msgid "Use Captcha"
 msgstr "캡챠사용"
 
-#: adm/boardForm.php:222
+#: adm/boardForm.php:248
 msgid "Use Comment Captcha"
 msgstr "댓글 캡챠사용"
 
-#: adm/boardForm.php:234 adm/config.php:229 adm/memberForm.php:166
+#: adm/boardForm.php:260 adm/config.php:229 adm/memberForm.php:166
 msgid "Save"
 msgstr "Save"
 
-#: adm/boardForm.php:235 adm/memberForm.php:167 adm/pagesForm.php:189
+#: adm/boardForm.php:261 adm/memberForm.php:167 adm/pagesForm.php:189
 msgid "List"
 msgstr "목록"
 
@@ -192,20 +204,24 @@ msgstr "목록"
 msgid "Please use it in the correct way."
 msgstr "올바른 방법으로 이용해 주십시오."
 
-#: adm/boardFormUpdate.php:47
+#: adm/boardFormUpdate.php:52
 msgid "Please enter the Board ID."
 msgstr "게시판 아이디를 입력해 주세요."
 
-#: adm/boardFormUpdate.php:50
+#: adm/boardFormUpdate.php:55
 msgid "Please enter the Board Title."
 msgstr "게시판 제목을 입력해 주세요."
 
-#: adm/boardFormUpdate.php:68
+#: adm/boardFormUpdate.php:58 board/board.inc.php:13
+msgid "Please specify the board skin correctly."
+msgstr "게시판 스킨을 올바르게 지정해 주십시오."
+
+#: adm/boardFormUpdate.php:76
 #, php-format
 msgid "%s is duplicated Board ID."
 msgstr "%s 는 중복된 게시판 아이디 입니다."
 
-#: adm/boardFormUpdate.php:117 adm/memberFormUpdate.php:181
+#: adm/boardFormUpdate.php:125 adm/memberFormUpdate.php:181
 msgid ""
 "An error occurred while adding or editing the information. Please try again."
 msgstr "정보 추가 또는 수정 중 오류가 발생했습니다. 다시 시도해 주십시오."
@@ -321,7 +337,7 @@ msgstr "파비콘 삭제"
 msgid "An error occurred while editing the information. Please try again."
 msgstr "정보 수정 중 오류가 발생했습니다. 다시 시도해 주십시오."
 
-#: adm/header.php:11 setupRun.php:365
+#: adm/header.php:11 setupRun.php:364
 msgid "Home"
 msgstr "홈"
 
@@ -351,7 +367,7 @@ msgid "Member"
 msgstr "회원"
 
 #: adm/member.php:85 adm/member.php:102 adm/memberForm.php:64
-#: member/findPassword.php:30 member/signup.php:74 setup.php:62
+#: member/findPassword.php:30 member/signup.php:74 setup.php:58
 msgid "Email"
 msgstr "이메일"
 
@@ -363,7 +379,7 @@ msgstr "레벨"
 msgid "Number"
 msgstr "번호"
 
-#: adm/member.php:101 adm/memberForm.php:57 member/signup.php:67 setup.php:56
+#: adm/member.php:101 adm/memberForm.php:57 member/signup.php:67 setup.php:52
 msgid "Name"
 msgstr "이름"
 
@@ -392,7 +408,7 @@ msgstr "자신보다 높은 레벨의 회원은 수정할 수 없습니다."
 
 #: adm/memberForm.php:71 board/password.php:42 board/password.php:43
 #: member/login.php:30 member/login.php:31 member/password.php:22
-#: member/password.php:23 member/signup.php:81 setup.php:68
+#: member/password.php:23 member/signup.php:81 setup.php:64
 msgid "Password"
 msgstr "비밀번호"
 
@@ -427,29 +443,29 @@ msgid "Sign Up"
 msgstr "회원가입"
 
 #: adm/memberFormUpdate.php:25 ajax/memberId.php:7 js/signup.js.php:100
-#: member/signupRun.php:31 setupRun.php:26
+#: member/signupRun.php:31 setupRun.php:22
 msgid "Please enter ID."
 msgstr "ID를 입력해 주십시오."
 
 #: adm/memberFormUpdate.php:28 ajax/memberId.php:10 member/loginCheck.php:28
-#: member/passwordCheck.php:29 member/signupRun.php:34 setupRun.php:29
+#: member/passwordCheck.php:29 member/signupRun.php:34 setupRun.php:25
 msgid "Please enter the ID format to fit."
 msgstr "ID를 형식에 맞게 입력해 주십시오."
 
 #: adm/memberFormUpdate.php:32 js/signup.js.php:105 member/signupRun.php:38
-#: setupRun.php:32
+#: setupRun.php:28
 msgid "Please enter Name."
 msgstr "이름을 입력해 주십시오."
 
 #: adm/memberFormUpdate.php:35 ajax/memberEmail.php:7 js/findPassword.js.php:14
 #: js/signup.js.php:110 member/findPassword2.php:16 member/signupRun.php:41
-#: setupRun.php:35
+#: setupRun.php:31
 msgid "Please enter Email."
 msgstr "이메일을 입력해 주십시오."
 
 #: adm/memberFormUpdate.php:38 ajax/memberEmail.php:10
 #: member/findPassword2.php:19 member/loginCheck.php:22
-#: member/passwordCheck.php:23 member/signupRun.php:44 setupRun.php:38
+#: member/passwordCheck.php:23 member/signupRun.php:44 setupRun.php:34
 msgid "Please enter the Email format to fit."
 msgstr "이메일 형식에 맞게 입력해 주십시오."
 
@@ -605,10 +621,6 @@ msgstr "방문일시"
 #: board/board.inc.php:8
 msgid "The board does not exist."
 msgstr "게시판 정보가 존재하지 않습니다."
-
-#: board/board.inc.php:13
-msgid "Please specify the board skin correctly."
-msgstr "게시판 스킨을 올바르게 지정해 주십시오."
 
 #: board/commentAction.php:12 board/commentAction.php:52
 #: board/commentUpdate.php:18 board/commentUpdate.php:91
@@ -953,28 +965,28 @@ msgstr "동의합니다."
 msgid "Privacy policy"
 msgstr "개인정보처리방침"
 
-#: setup.php:8 setupRun.php:15
+#: setup.php:8 setupRun.php:11
 msgid "Setup can not be executed."
 msgstr "설치 프로세스를 실행할 수 없습니다."
 
-#: setup.php:44
+#: setup.php:40
 #, php-format
 msgid "Do not have permission to write to the %s folder."
 msgstr "%s 폴더에 쓰기 권한이 없습니다."
 
-#: setup.php:75
+#: setup.php:71
 msgid "Setup"
 msgstr "Setup"
 
-#: setupRun.php:41
+#: setupRun.php:37
 msgid "Please enter Password"
 msgstr "비밀번호를 입력해 주십시오"
 
-#: setupRun.php:363
+#: setupRun.php:362
 msgid "Complete!"
 msgstr "Complete!"
 
-#: setupRun.php:364
+#: setupRun.php:363
 msgid "NT-Core Setup is done well"
 msgstr "NT-Core Setup is done well"
 

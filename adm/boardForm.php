@@ -20,6 +20,11 @@ if ($bo_id) {
 
     if (!$board['bo_id'])
         alertClose(_('Board information does not exist.'));
+} else {
+    $board['bo_use']         = 1;
+    $board['bo_subject_len'] = 50;
+    $board['bo_page_rows']   = (int)$config['cf_page_rows'];
+    $board['bo_page_limit']  = (int)$config['cf_page_limit'];
 }
 
 // 스킨
@@ -111,6 +116,27 @@ $listHref = NT_ADMIN_URL.DIRECTORY_SEPARATOR.'board.php?'.http_build_query($qstr
                 <label for="bo_page_limit" class="col-md-2 col-form-label"><?php echo _('Number of pages'); ?></label>
                 <div class="col-md-2">
                     <input type="text" name="bo_page_limit" id="bo_page_limit" value="<?php echo $board['bo_page_limit']; ?>" class="form-control form-control-sm" required>
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <label for="bo_gallery_cols" class="col-md-2 col-form-label"><?php echo _('Number of images in one line'); ?></label>
+                <div class="col-md-2">
+                    <input type="text" name="bo_gallery_cols" id="bo_gallery_cols" value="<?php echo $board['bo_gallery_cols']; ?>" class="form-control form-control-sm">
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <label for="bo_thumb_width" class="col-md-2 col-form-label"><?php echo _('Thumbnail width'); ?></label>
+                <div class="col-md-2">
+                    <input type="text" name="bo_thumb_width" id="bo_thumb_width" value="<?php echo $board['bo_thumb_width']; ?>" class="form-control form-control-sm">
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <label for="bo_thumb_height" class="col-md-2 col-form-label"><?php echo _('Thumbnail height'); ?></label>
+                <div class="col-md-2">
+                    <input type="text" name="bo_thumb_height" id="bo_thumb_height" value="<?php echo $board['bo_thumb_height']; ?>" class="form-control form-control-sm">
                 </div>
             </div>
 
