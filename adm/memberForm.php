@@ -77,7 +77,7 @@ $listHref = NT_ADMIN_URL.DIRECTORY_SEPARATOR.'member.php?'.http_build_query($qst
             <div class="form-group row">
                 <label for="mb_level" class="col-md-2 col-form-label"><?php echo _('Level'); ?></label>
                 <div class="col-md-2">
-                    <select name="mb_level" id="mb_level" class="custom-select mr-sm-2" required>
+                    <select name="mb_level" id="mb_level" class="custom-select custom-select-sm mr-sm-2" required>
                         <?php
                         for ($i = 1; $i <= __c('cf_max_level'); $i++) {
                             $optLevel = 'Lv. ' . $i;
@@ -93,7 +93,7 @@ $listHref = NT_ADMIN_URL.DIRECTORY_SEPARATOR.'member.php?'.http_build_query($qst
             <div class="form-group row">
                 <label for="mb_admin" class="col-md-2 col-form-label"><?php echo _('Member Tyep'); ?></label>
                 <div class="col-md-2">
-                    <select name="mb_admin" id="mb_admin" class="custom-select mr-sm-2" required>
+                    <select name="mb_admin" id="mb_admin" class="custom-select custom-select-sm mr-sm-2" required>
                         <option value="0"<?php echo getSelected(0, $mb['mb_admin']); ?>><?php echo _('Member'); ?></option>
                         <option value="1"<?php echo getSelected(1, $mb['mb_admin']); ?>><?php echo _('Manager'); ?></option>
                         <?php if ($isSuper) { ?>
@@ -106,7 +106,7 @@ $listHref = NT_ADMIN_URL.DIRECTORY_SEPARATOR.'member.php?'.http_build_query($qst
             <div class="form-group row">
                 <label for="mb_2factor_auth" class="col-md-2 col-form-label"><?php echo _('Google 2-factor authentication'); ?></label>
                 <div class="col-md-2">
-                    <select name="mb_2factor_auth" id="mb_2factor_auth" class="custom-select mr-sm-2" required>
+                    <select name="mb_2factor_auth" id="mb_2factor_auth" class="custom-select custom-select-sm mr-sm-2" required>
                         <option value="1"<?php echo getSelected(1, $mb['mb_2factor_auth']); ?>><?php echo _('Used'); ?></option>
                         <option value="0"<?php echo getSelected(0, $mb['mb_2factor_auth']); ?>><?php echo _('Not used'); ?></option>
                     </select>

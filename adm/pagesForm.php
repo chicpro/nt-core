@@ -106,7 +106,7 @@ $listHref = NT_ADMIN_URL.DIRECTORY_SEPARATOR.'pages.php?'.http_build_query($qstr
                 <div class="form-group row">
                     <label for="pg_use" class="col-md-1 col-form-label"><?php echo _('Page Use'); ?></label>
                     <div class="col-md-2">
-                        <select name="pg_use" id="pg_use" class="custom-select mr-sm-2" required>
+                        <select name="pg_use" id="pg_use" class="custom-select custom-select-sm mr-sm-2" required>
                             <option value="1"<?php echo getSelected(1, $pages['pg_use']); ?>><?php echo _('Used'); ?></option>
                             <option value="0"<?php echo getSelected(0, $pages['pg_use']); ?>><?php echo _('Not used'); ?></option>
                         </select>
@@ -130,7 +130,7 @@ $listHref = NT_ADMIN_URL.DIRECTORY_SEPARATOR.'pages.php?'.http_build_query($qstr
                 <div class="form-group row">
                     <label for="pg_header" class="col-md-1 col-form-label"><?php echo _('Header'); ?></label>
                     <div class="col-md-3">
-                        <select name="pg_header" id="pg_header" class="custom-select mr-sm-2">
+                        <select name="pg_header" id="pg_header" class="custom-select custom-select-sm mr-sm-2">
                             <?php
                             foreach ($headerFiles as $file) {
                             ?>
@@ -162,7 +162,7 @@ $listHref = NT_ADMIN_URL.DIRECTORY_SEPARATOR.'pages.php?'.http_build_query($qstr
                 <div class="form-group row">
                     <label for="pg_footer" class="col-md-1 col-form-label"><?php echo _('Footer'); ?></label>
                     <div class="col-md-3">
-                        <select name="pg_footer" id="pg_footer" class="custom-select mr-sm-2">
+                        <select name="pg_footer" id="pg_footer" class="custom-select custom-select-sm mr-sm-2">
                             <?php
                             foreach ($footerFiles as $file) {
                             ?>

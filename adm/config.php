@@ -33,7 +33,7 @@ require_once NT_ADMIN_PATH.DIRECTORY_SEPARATOR.'header.php';
             <div class="form-group row">
                 <label for="cf_site_index" class="col-md-2 col-form-label"><?php echo _('Site index'); ?></label>
                 <div class="col-md-4">
-                    <select name="cf_site_index" id="cf_site_index" class="custom-select mr-sm-2" required>
+                    <select name="cf_site_index" id="cf_site_index" class="custom-select custom-select-sm mr-sm-2" required>
                         <option value="0"><?php echo _('Choose site index'); ?></option>
                         <?php
                         $sql = " select pg_no, pg_subject from `{$nt['pages_table']}` where pg_use = :pg_use order by pg_no desc ";
@@ -54,7 +54,7 @@ require_once NT_ADMIN_PATH.DIRECTORY_SEPARATOR.'header.php';
             <div class="form-group row">
                 <label for="cf_locale" class="col-md-2 col-form-label"><?php echo _('Site Locale'); ?></label>
                 <div class="col-md-2">
-                    <select name="cf_locale" id="cf_locale" class="custom-select mr-sm-2" required>
+                    <select name="cf_locale" id="cf_locale" class="custom-select custom-select-sm mr-sm-2" required>
                         <?php
                         foreach ($_LOCALES as $k => $v) {
                         ?>
@@ -83,7 +83,7 @@ require_once NT_ADMIN_PATH.DIRECTORY_SEPARATOR.'header.php';
             <div class="form-group row">
                 <label for="cf_theme" class="col-md-2 col-form-label"><?php echo _('Theme'); ?></label>
                 <div class="col-md-2">
-                    <select name="cf_theme" id="cf_theme" class="custom-select mr-sm-2" required>
+                    <select name="cf_theme" id="cf_theme" class="custom-select custom-select-sm mr-sm-2" required>
                         <?php
                         foreach (getThemeDir() as $dir) {
                         ?>
@@ -177,7 +177,7 @@ require_once NT_ADMIN_PATH.DIRECTORY_SEPARATOR.'header.php';
             <div class="form-group row">
                 <label for="cf_2factor_auth" class="col-md-2 col-form-label"><?php echo _('Google 2-factor authentication'); ?></label>
                 <div class="col-md-2">
-                    <select name="cf_2factor_auth" id="cf_2factor_auth" class="custom-select mr-sm-2" required>
+                    <select name="cf_2factor_auth" id="cf_2factor_auth" class="custom-select custom-select-sm mr-sm-2" required>
                         <option value="1"<?php echo getSelected(1, $config['cf_2factor_auth']); ?>><?php echo _('Used'); ?></option>
                         <option value="0"<?php echo getSelected(0, $config['cf_2factor_auth']); ?>><?php echo _('Not used'); ?></option>
                     </select>
