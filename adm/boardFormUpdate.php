@@ -13,6 +13,7 @@ $flds = array(
     'bo_id',
     'bo_title',
     'bo_use',
+    'bo_skin',
     'bo_category',
     'bo_subject_len',
     'bo_page_rows',
@@ -34,6 +35,7 @@ foreach ($flds as $key) {
             $$key = preg_replace(NT_BOARD_ID_PATTERN, '', $_POST[$key]);
             break;
         case 'bo_title':
+        case 'bo_skin':
         case 'bo_category':
             $$key = trim(strip_tags($_POST[$key]));
             break;
@@ -48,6 +50,9 @@ if (!$bo_id)
 
 if (!$bo_title)
     dieJson(_('Please enter the Board Title.'));
+
+if (!$bo_skin)
+    dieJson(_('Please specify the board skin correctly.'));
 
 if (!$bo_page_row)
     $bo_page_rows = __c('cf_page_rows');

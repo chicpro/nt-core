@@ -2,15 +2,6 @@
 
 body > .container {padding: 56px 15px 0;}
 
-.board-list .icon {width: 14px;height: 14px;vertical-align: middle;}
-.board-list .icon-notice {width: 15px;height: 15px;vertical-align: middle;}
-.file-list .icon {width: 14px;height: 14px;vertical-align: middle;}
-.link-list .icon {width: 14px;height: 14px;vertical-align: middle;}
-
-.comment-list {position: relative;}
-.comment-list .reply-icon {position:absolute;left:0; top: 10px; width:16px;height:16px;}
-.comment-button .icon {width: 15px; height: 15px;}
-
 .index {padding: 100px 0}
 .index .icon {width:120px; height:120px}
 

@@ -220,6 +220,7 @@ $sql = " CREATE TABLE `{$nt['board_config_table']}` (
     `bo_id` varchar(20) NOT NULL,
     `bo_title` varchar(40) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
     `bo_use` tinyint(4) DEFAULT NULL,
+    `bo_skin` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
     `bo_category` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
     `bo_subject_len` int(11) DEFAULT NULL,
     `bo_page_rows` int(11) DEFAULT NULL,
@@ -269,7 +270,7 @@ if ($DB->exec($sql) === false)
     die($DB->error);
 
 // free Board Create
-$sql = " insert into `{$nt['board_config_table']}` ( bo_id, bo_title, bo_use, bo_subject_len, bo_page_rows, bo_page_limit, bo_list_level, bo_view_level, bo_write_level, bo_comment_level, bo_reply_level, bo_file_limit, bo_link_limit, bo_captcha_use, bo_captcha_comment ) values ( 'free', 'Free Board', '1', '50', '{$config['cf_page_rows']}', '{$config['cf_page_limit']}', '1', '1', '1', '1', '1', '2', '1', '0', '0' ) ";
+$sql = " insert into `{$nt['board_config_table']}` ( bo_id, bo_title, bo_use, bo_skin, bo_subject_len, bo_page_rows, bo_page_limit, bo_list_level, bo_view_level, bo_write_level, bo_comment_level, bo_reply_level, bo_file_limit, bo_link_limit, bo_captcha_use, bo_captcha_comment ) values ( 'free', 'Free Board', '1', 'board', '50', '{$config['cf_page_rows']}', '{$config['cf_page_limit']}', '1', '1', '1', '1', '1', '2', '1', '0', '0' ) ";
 
 if ($DB->exec($sql) === false)
     die($DB->error);

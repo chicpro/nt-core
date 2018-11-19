@@ -54,4 +54,4 @@ $canonical = NT_URL.'/'.BOARD_DIR.'/'.$id.'/p/'.$p;
 $html->addMetaTag('canonical', $canonical);
 $html->addOGTag('url', $canonical);
 
-require_once NT_THEME_PATH.DIRECTORY_SEPARATOR.'list.php';
+require_once NT_BOARD_SKIN_PATH.DIRECTORY_SEPARATOR.'list.php';

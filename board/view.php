@@ -123,4 +123,4 @@ if (!empty($viewImages)) {
 if ($ogImage)
     $html->addOGTag('image', $ogImage);
 
-require_once NT_THEME_PATH.DIRECTORY_SEPARATOR.'view.php';
+require_once NT_BOARD_SKIN_PATH.DIRECTORY_SEPARATOR.'view.php';

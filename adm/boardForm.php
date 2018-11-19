@@ -22,6 +22,17 @@ if ($bo_id) {
         alertClose(_('Board information does not exist.'));
 }
 
+// 스킨
+$skins = array();
+$skinDir = NT_THEME_PATH.DIRECTORY_SEPARATOR.BOARD_SKIN_DIR;
+foreach (scandir($skinDir) as $skin) {
+    if ($skin == '.' || $skin == '..')
+        continue;
+
+    if (is_dir($skinDir.DIRECTORY_SEPARATOR.$skin))
+        $skins[] = $skin;
+}
+
 $qstr = array_merge(array('p' => $p), $qstr);
 $listHref = NT_ADMIN_URL.DIRECTORY_SEPARATOR.'board.php?'.http_build_query($qstr, '', '&amp;');
 ?>
@@ -52,9 +63,24 @@ $listHref = NT_ADMIN_URL.DIRECTORY_SEPARATOR.'board.php?'.http_build_query($qstr
             <div class="form-group row">
                 <label for="bo_use" class="col-md-2 col-form-label"><?php echo _('Use board'); ?></label>
                 <div class="col-md-2">
-                    <select name="bo_use" id="bo_use" class="custom-select mr-sm-2" required>
+                    <select name="bo_use" id="bo_use" class="custom-select custom-select-sm mr-sm-2" required>
                         <option value="1"<?php echo getSelected(1, $board['bo_use']); ?>><?php echo _('Used'); ?></option>
                         <option value="0"<?php echo getSelected(0, $board['bo_use']); ?>><?php echo _('Not used'); ?></option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <label for="bo_skin" class="col-md-2 col-form-label"><?php echo _('Board skin'); ?></label>
+                <div class="col-md-2">
+                    <select name="bo_skin" id="bo_skin" class="custom-select custom-select-sm mr-sm-2" required>
+                        <?php
+                        foreach ($skins as $skin) {
+                        ?>
+                        <option value="<?php echo $skin; ?>"<?php echo getSelected($skin, $board['bo_skin']); ?>><?php echo getHtmlChar($skin); ?></option>
+                        <?php
+                        }
+                        ?>
                     </select>
                 </div>
             </div>
@@ -91,7 +117,7 @@ $listHref = NT_ADMIN_URL.DIRECTORY_SEPARATOR.'board.php?'.http_build_query($qstr
             <div class="form-group row">
                 <label for="bo_list_level" class="col-md-2 col-form-label"><?php echo _('List view permissions'); ?></label>
                 <div class="col-md-2">
-                    <select name="bo_list_level" id="bo_list_level" class="custom-select mr-sm-2" required>
+                    <select name="bo_list_level" id="bo_list_level" class="custom-select custom-select-sm mr-sm-2" required>
                         <?php
                         for ($i = 1; $i <= __c('cf_max_level'); $i++) {
                             $optLevel = 'Lv. ' . $i;
@@ -107,7 +133,7 @@ $listHref = NT_ADMIN_URL.DIRECTORY_SEPARATOR.'board.php?'.http_build_query($qstr
             <div class="form-group row">
                 <label for="bo_view_level" class="col-md-2 col-form-label"><?php echo _('Content view permissions'); ?></label>
                 <div class="col-md-2">
-                    <select name="bo_view_level" id="bo_view_level" class="custom-select mr-sm-2" required>
+                    <select name="bo_view_level" id="bo_view_level" class="custom-select custom-select-sm mr-sm-2" required>
                         <?php
                         for ($i = 1; $i <= __c('cf_max_level'); $i++) {
                             $optLevel = 'Lv. ' . $i;
@@ -123,7 +149,7 @@ $listHref = NT_ADMIN_URL.DIRECTORY_SEPARATOR.'board.php?'.http_build_query($qstr
             <div class="form-group row">
                 <label for="bo_write_level" class="col-md-2 col-form-label"><?php echo _('Posts written permissions'); ?></label>
                 <div class="col-md-2">
-                    <select name="bo_write_level" id="bo_write_level" class="custom-select mr-sm-2" required>
+                    <select name="bo_write_level" id="bo_write_level" class="custom-select custom-select-sm mr-sm-2" required>
                         <?php
                         for ($i = 1; $i <= __c('cf_max_level'); $i++) {
                             $optLevel = 'Lv. ' . $i;
@@ -139,7 +165,7 @@ $listHref = NT_ADMIN_URL.DIRECTORY_SEPARATOR.'board.php?'.http_build_query($qstr
             <div class="form-group row">
                 <label for="bo_comment_level" class="col-md-2 col-form-label"><?php echo _('Comments written permissions'); ?></label>
                 <div class="col-md-2">
-                    <select name="bo_comment_level" id="bo_comment_level" class="custom-select mr-sm-2" required>
+                    <select name="bo_comment_level" id="bo_comment_level" class="custom-select custom-select-sm mr-sm-2" required>
                         <?php
                         for ($i = 1; $i <= __c('cf_max_level'); $i++) {
                             $optLevel = 'Lv. ' . $i;
@@ -155,7 +181,7 @@ $listHref = NT_ADMIN_URL.DIRECTORY_SEPARATOR.'board.php?'.http_build_query($qstr
             <div class="form-group row">
                 <label for="bo_reply_level" class="col-md-2 col-form-label"><?php echo _('Permission to create replies'); ?></label>
                 <div class="col-md-2">
-                    <select name="bo_reply_level" id="bo_reply_level" class="custom-select mr-sm-2" required>
+                    <select name="bo_reply_level" id="bo_reply_level" class="custom-select custom-select-sm mr-sm-2" required>
                         <?php
                         for ($i = 1; $i <= __c('cf_max_level'); $i++) {
                             $optLevel = 'Lv. ' . $i;
@@ -185,7 +211,7 @@ $listHref = NT_ADMIN_URL.DIRECTORY_SEPARATOR.'board.php?'.http_build_query($qstr
             <div class="form-group row">
                 <label for="bo_captcha_use" class="col-md-2 col-form-label"><?php echo _('Use Captcha'); ?></label>
                 <div class="col-md-2">
-                    <select name="bo_captcha_use" id="bo_captcha_use" class="custom-select mr-sm-2" required>
+                    <select name="bo_captcha_use" id="bo_captcha_use" class="custom-select custom-select-sm mr-sm-2" required>
                         <option value="1"<?php echo getSelected(1, $board['bo_captcha_use']); ?>><?php echo _('Used'); ?></option>
                         <option value="0"<?php echo getSelected(0, $board['bo_captcha_use']); ?>><?php echo _('Not used'); ?></option>
                     </select>
@@ -195,7 +221,7 @@ $listHref = NT_ADMIN_URL.DIRECTORY_SEPARATOR.'board.php?'.http_build_query($qstr
             <div class="form-group row">
                 <label for="bo_captcha_comment" class="col-md-2 col-form-label"><?php echo _('Use Comment Captcha'); ?></label>
                 <div class="col-md-2">
-                    <select name="bo_captcha_comment" id="bo_captcha_comment" class="custom-select mr-sm-2" required>
+                    <select name="bo_captcha_comment" id="bo_captcha_comment" class="custom-select custom-select-sm mr-sm-2" required>
                         <option value="1"<?php echo getSelected(1, $board['bo_captcha_comment']); ?>><?php echo _('Used'); ?></option>
                         <option value="0"<?php echo getSelected(0, $board['bo_captcha_comment']); ?>><?php echo _('Not used'); ?></option>
                     </select>

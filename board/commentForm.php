@@ -33,7 +33,7 @@ if ($isCommentCaptcha) {
     $captcha->getScript();
 }
 
-require_once NT_THEME_PATH.DIRECTORY_SEPARATOR.'commentForm.php';
+require_once NT_BOARD_SKIN_PATH.DIRECTORY_SEPARATOR.'commentForm.php';
 
 if ($isCommentCaptcha)
     echo '<script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit&hl=" async defer></script>';

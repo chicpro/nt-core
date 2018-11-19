@@ -22,6 +22,7 @@ define('TINYMCE_DIR',       'tinymce');
 define('EDITOR_FILE_DIR',   'editor');
 define('SITEMAP_DIR',       'sitemap');
 define('PLUGIN_DIR',        'plugin');
+define('BOARD_SKIN_DIR',    'board');
 
 // 경로설정
 define('NT_INIT_PATH',      NT_PATH.DIRECTORY_SEPARATOR.INIT_DIR);

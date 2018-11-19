@@ -20,4 +20,4 @@ $DB->bindValue(':bo_no', $no);
 $DB->execute();
 $result = $DB->fetchAll();
 
-require_once NT_THEME_PATH.DIRECTORY_SEPARATOR.'comment.php';
+require_once NT_BOARD_SKIN_PATH.DIRECTORY_SEPARATOR.'comment.php';

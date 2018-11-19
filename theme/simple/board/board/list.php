@@ -63,7 +63,7 @@ else
 
             $bo_category = (trim($row['bo_category']) ? '<span class="text-muted">'.getHtmlChar($row['bo_category']).' | </span>' : '');
 
-            $view = $replyIcon.$secretIcon.'<a href="'.$href.'" class="'.$noticeFont.'"><h3 class="h6 mb-0">'.$subject.'</h3></a>';
+            $view = $replyIcon.$secretIcon.'<a href="'.$href.'" class="'.$noticeFont.'"><h3 class="board-subject h6 mb-0">'.$subject.'</h3></a>';
         ?>
         <li class="row mx-1 py-2 border-bottom board-list">
             <div class="col-1 text-center text-secondary"><?php echo ($row['bo_notice'] ? $noticeIcon : $listNo); ?></div>
