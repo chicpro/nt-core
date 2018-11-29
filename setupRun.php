@@ -1,5 +1,4 @@
 <?php
-#ini_set('display_errors', 1);
 define('_SETUP_', true);
 require_once './_common.php';
 
