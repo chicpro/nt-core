@@ -133,6 +133,8 @@ class NTLOCALE
         if (!setlocale(LC_MESSAGES, $this->locale))
             setlocale(LC_MESSAGES, $this->locale.'.utf8');
 
+        putenv('LANGUAGE='.$this->locale);
+
         foreach ($this->domains as $domain) {
             $this->directories = array_merge($this->directories, $this->getDirectories($domain[1]));
         }
