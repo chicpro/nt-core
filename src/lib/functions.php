@@ -524,7 +524,7 @@ function getPagesContent($id, bool $viewCount = true)
     else
         $html->loadPage('header.sub.php');
 
-    echo PHP_EOL.$pages['pg_content'].PHP_EOL;
+    echo PHP_EOL.addContentImageClass($pages['pg_content']).PHP_EOL;
 
     if (is_file(NT_THEME_PATH.DIRECTORY_SEPARATOR.$footer))
         $html->loadPage($footer);
@@ -542,6 +542,27 @@ function getPagesContent($id, bool $viewCount = true)
     }
 
     return array('content' => $content, 'code' => '');
+}
+
+function addContentImageClass(string $content, string $class = 'img-fluid')
+{
+    $images = getEditorImages($content);
+
+    if (is_array($images) && !empty($images)) {
+        foreach ($images[0] as $key => $img) {
+            if (!$img)
+                continue;
+
+            $pattern = '#class=[\"\']{1}([^\"\']+)[\"\']{1}#i';
+
+            if (preg_match($pattern, $img, $m))
+                $content = str_replace($img, preg_replace($pattern, 'class="\\1 '.$class.'"' ,$img), $content);
+            else
+                $content = str_replace($img, preg_replace('#^<img#i', '<img class="'.$class.'"', $img), $content);
+        }
+    }
+
+    return $content;
 }
 
 function getBoardListThumbnail(int $no, int $width, int $height = 0, string $content = '')
