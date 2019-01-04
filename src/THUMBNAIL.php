@@ -56,32 +56,6 @@ class THUMBNAIL
         return $count > 1;
     }
 
-    private function convertWebP2PNG(string $webp)
-    {
-        if (mime_content_type($webp) == 'image/webp') {
-            $im = imagecreatefromwebp($webp);
-
-            $w = imagesx($im);
-            $h = imagesy($im);
-
-            imagealphablending($im, true);
-
-            $dst = imagecreatetruecolor($w, $h);
-
-            $bgColor = imagecolorallocatealpha($dst, 0, 0, 0, 127);
-            imagefill($dst, 0, 0, $bgColor);
-            imagealphablending($dst, false);
-            imagesavealpha($dst, true);
-
-            imagecopy($dst, $im, 0, 0, 0, 0, $w, $h);
-
-            imagepng($dst, '154575.png');
-
-            imagedestroy($im);
-            imagedestroy($dst);
-        }
-    }
-
     public function thumbnail(string $source = '', int $width = 0, int $height = 0, string $target = '')
     {
         if ($width > 0)
