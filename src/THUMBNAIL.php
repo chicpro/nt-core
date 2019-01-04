@@ -15,6 +15,8 @@ class THUMBNAIL
     protected $jpgQuality;
     protected $prefix;
 
+    protected $imageType = [1, 2, 3, 18];
+
     public function __construct()
     {
         $this->create      = false;
@@ -54,6 +56,32 @@ class THUMBNAIL
         return $count > 1;
     }
 
+    private function convertWebP2PNG(string $webp)
+    {
+        if (mime_content_type($webp) == 'image/webp') {
+            $im = imagecreatefromwebp($webp);
+
+            $w = imagesx($im);
+            $h = imagesy($im);
+
+            imagealphablending($im, true);
+
+            $dst = imagecreatetruecolor($w, $h);
+
+            $bgColor = imagecolorallocatealpha($dst, 0, 0, 0, 127);
+            imagefill($dst, 0, 0, $bgColor);
+            imagealphablending($dst, false);
+            imagesavealpha($dst, true);
+
+            imagecopy($dst, $im, 0, 0, 0, 0, $w, $h);
+
+            imagepng($dst, '154575.png');
+
+            imagedestroy($im);
+            imagedestroy($dst);
+        }
+    }
+
     public function thumbnail(string $source = '', int $width = 0, int $height = 0, string $target = '')
     {
         if ($width > 0)
@@ -72,7 +100,21 @@ class THUMBNAIL
             return false;
 
         $size = @getimagesize($this->source);
-        if ($size[2] < 1 || $size[2] > 3)
+
+        if (empty($size) && version_compare(PHP_VERSION, '7.1.0') < 0) {
+            if (mime_content_type($this->source) == 'image/webp') {
+                $im = imagecreatefromwebp($this->source);
+
+                $w = imagesx($im);
+                $h = imagesy($im);
+
+                $size = [0 => $w, 1 => $h, 2 => 18];
+
+                imagedestroy($im);
+            }
+        }
+
+        if (!in_array($size[2], $this->imageType))
             return false;
 
         $thumbName = pathinfo($this->source, PATHINFO_FILENAME);
@@ -141,7 +183,10 @@ class THUMBNAIL
         } else if ($size[2] == 3) {
             $src = @imagecreatefrompng($this->source);
             @imagealphablending($src, true);
-        } else {
+        } else if ($size[2] == 18) {
+            $src = @imagecreatefromwebp($this->source);
+            @imagealphablending($src, true);
+        }else {
             return;
         }
 
@@ -200,6 +245,9 @@ class THUMBNAIL
                 if ($size[2] == 3) {
                     imagealphablending($dst, false);
                     imagesavealpha($dst, true);
+                } else if ($size[2] == 18) {
+                    imagealphablending($dst, false);
+                    imagesavealpha($dst, true);
                 } else if ($size[2] == 1) {
                     $palletsize = imagecolorstotal($src);
                     if($transparency >= 0 && $transparency < $palletsize) {
@@ -222,7 +270,12 @@ class THUMBNAIL
                     $dst_w = $tmp_w;
                 }
 
-                if($size[2] == 3) {
+                if ($size[2] == 3) {
+                    $bgColor = imagecolorallocatealpha($dst, 0, 0, 0, 127);
+                    imagefill($dst, 0, 0, $bgColor);
+                    imagealphablending($dst, false);
+                    imagesavealpha($dst, true);
+                } else if ($size[2] == 18) {
                     $bgColor = imagecolorallocatealpha($dst, 0, 0, 0, 127);
                     imagefill($dst, 0, 0, $bgColor);
                     imagealphablending($dst, false);
@@ -275,7 +328,12 @@ class THUMBNAIL
                 }
             }
 
-            if($size[2] == 3) {
+            if ($size[2] == 3) {
+                $bgColor = imagecolorallocatealpha($dst, 0, 0, 0, 127);
+                imagefill($dst, 0, 0, $bgColor);
+                imagealphablending($dst, false);
+                imagesavealpha($dst, true);
+            } else if ($size[2] == 18) {
                 $bgColor = imagecolorallocatealpha($dst, 0, 0, 0, 127);
                 imagefill($dst, 0, 0, $bgColor);
                 imagealphablending($dst, false);
@@ -301,6 +359,8 @@ class THUMBNAIL
             imagegif($dst, $this->target);
         } else if ($size[2] == 3) {
             imagepng($dst, $this->target, $this->pngCompress);
+        } else if ($size[2] == 18) {
+            imagewebp($dst, $this->target);
         } else {
             imagejpeg($dst, $this->target, $this->jpgQuality);
         }
